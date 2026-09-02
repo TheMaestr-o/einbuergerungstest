@@ -105,7 +105,13 @@ python3 build/build_html.py      # data/ + build/app.template.html  ->  index.ht
 
 ## Legal
 
-The questions, options and images are official material of the Federal Office for Migration and Refugees and are reproduced unchanged. This project is not affiliated with the BAMF and is not official exam preparation. The code is MIT.
+A **private, non-commercial project**. No ads, no revenue, no registration, no tracking, no data collection — the page has no server of its own to send anything to, and everything it remembers stays in your browser.
+
+The questions, options and images are **not mine**. They are reproduced unchanged from the [BAMF question catalogue][bamf] (7 May 2025), an official work published for general knowledge (§ 5 (2) UrhG), with the source named and the wording untouched (§§ 62, 63 UrhG). The coats of arms, flags and maps are shown only as part of that catalogue — not as state emblems and not as a sign of any official body.
+
+This project is **not affiliated with the BAMF** or any authority, is not commissioned, reviewed or endorsed by one, and is **not official exam preparation**. No warranty for correctness or currency: the valid official catalogue is what counts. The code is MIT; the official material is not.
+
+The full privacy notice and disclaimer are inside the page itself, under **Rechtliches** — so they are there offline too.
 
 [bamf]: https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/Einbuergerung/gesamtfragenkatalog-lebenindeutschland.html
 [s1]: https://github.com/flexsurfer/einburgerungstest
