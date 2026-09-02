@@ -42,8 +42,6 @@ slim = [{
     'id': q['id'], 'num': q['num'], 'category': q['category'], 'topic': q['topic'],
     'question': q['question'], 'answers': q['answers'], 'correct': q['correct'],
     'credit': q['credit'], 'images': q['images'],
-    'ru': ({'question': q['ru']['question'], 'answers': q['ru']['answers']}
-           if q.get('ru') and q['ru'].get('question') else None),
 } for q in questions]
 
 html = TPL.read_text(encoding='utf-8')
@@ -58,4 +56,4 @@ FRAGMENT.write_text(html.replace('<!--/head-->\n', ''), encoding='utf-8')
 
 print(f'{OUT.relative_to(ROOT)}: {OUT.stat().st_size/1e6:.2f} MB')
 print(f'  {len(slim)} Fragen, {len(images)} Bilder eingebettet')
-print(f'  {sum(1 for q in slim if q["ru"])} Fragen mit russischer Übersetzung')
+print('  Übersetzungen bleiben in data/questions.json, die App zeigt nur Deutsch')

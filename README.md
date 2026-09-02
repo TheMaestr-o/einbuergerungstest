@@ -15,8 +15,8 @@ Antworten und alle Bilder stecken in der Datei.
   60 Minuten, bestanden ab 17 richtigen Antworten
 * **Training nach Themen** mit sofortiger Auflösung, Fehlerspeicher und Wiederholung —
   falsch beantwortete und noch nie gesehene Fragen kommen häufiger dran
-* **russische Übersetzung** zuschaltbar (maschinell, nur als Verständnishilfe)
-* Tastatur: `1`–`4` antworten, `Enter` weiter; Fortschritt bleibt im Browser gespeichert
+* auf dem Telefon genauso bedienbar wie am Rechner
+* Tastatur am Rechner: `1`–`4` antworten, `Enter` weiter; Fortschritt bleibt im Browser gespeichert
 
 ## Woher die Daten kommen und wie sie geprüft wurden
 
@@ -50,9 +50,11 @@ Bekannte Eigenheit: In Frage 201 steht im amtlichen PDF bei einer *falschen* Ant
 „Niedersachen“ statt „Niedersachsen“. Der Tippfehler ist bewusst nicht korrigiert —
 der Text folgt dem Original.
 
-Die russischen Übersetzungen sind maschinell erzeugt und stellenweise ungenau
-(z. B. „Ministerpräsident“ und „Premierminister“ werden gleich übersetzt). Sie sind eine
-Lesehilfe; geprüft wird ausschließlich der deutsche Text.
+In `data/questions.json` liegen zu 458 Fragen zusätzlich russische Übersetzungen aus
+Quelle 2. Die App zeigt sie **nicht** an: sie sind maschinell erzeugt und stellenweise
+ungenau (etwa werden „Ministerpräsident“ und „Premierminister“ gleich übersetzt), und
+geprüft wird ohnehin nur der deutsche Text. Die Daten bleiben im Repository, falls sie
+später doch gebraucht werden.
 
 ## Neu bauen
 
@@ -62,7 +64,7 @@ curl -Lo katalog.pdf "https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/Einb
 python3 build/build_html.py          # data/ + build/app.template.html -> index.html
 ```
 
-* `data/questions.json` — die 460 Fragen mit Lösung, Thema, Bildern, Übersetzung
+* `data/questions.json` — die 460 Fragen mit Lösung, Thema, Bildern und Übersetzung
 * `data/images/` — 100 WebP-Bilder aus dem PDF
 * `build/app.template.html` — die App (Platzhalter `__DATA__` / `__IMAGES__`)
 * `tools/` — die Aufbereitung: PDF-Text mit Koordinaten lesen, Aufgaben zerlegen,
