@@ -1,89 +1,111 @@
-# Einbürgerungstest — Bogen
+<div align="center">
 
-Ein Trainer für den deutschen Einbürgerungstest bzw. den Test „Leben in Deutschland“.
-Eine einzige HTML-Datei: keine Installation, kein Server, kein Netz nötig — Fragen,
-Antworten und alle Bilder stecken in der Datei.
+# E I N B Ü R G E R U N G S T E S T
 
-**[index.html](index.html) herunterladen und im Browser öffnen** — oder als GitHub Page ausliefern.
+**All 460 questions of the German naturalisation test — in one file that needs nothing.**
 
-## Was drin ist
+<sub>Built from the official BAMF question catalogue, answers verified against the source</sub>
 
-* alle **300 bundesweiten** und **160 landesspezifischen** Fragen (Stand des Katalogs: **07.05.2025**)
-* die **100 Bilder** des Katalogs (Wappen, Flaggen, Landkarten, Stimmzettel), aus dem
-  amtlichen PDF extrahiert
-* **Prüfungssimulation**: 33 Fragen (30 bundesweite + 3 aus dem gewählten Bundesland),
-  60 Minuten, bestanden ab 17 richtigen Antworten
-* **Training nach Themen** mit sofortiger Auflösung, Fehlerspeicher und Wiederholung —
-  falsch beantwortete und noch nie gesehene Fragen kommen häufiger dran
-* zu **jeder** Frage eine kurze Erklärung auf Russisch, warum genau diese Antwort stimmt
-* auf dem Telefon genauso bedienbar wie am Rechner
-* Tastatur am Rechner: `1`–`4` antworten, `Enter` weiter; Fortschritt bleibt im Browser gespeichert
+<br>
 
-## Woher die Daten kommen und wie sie geprüft wurden
+![Questions](https://img.shields.io/badge/460%20questions-b8891b?style=flat-square)
+![Catalogue](https://img.shields.io/badge/catalogue-07.05.2025-606162?style=flat-square)
+![Images](https://img.shields.io/badge/100%20images-606162?style=flat-square)
+![Offline](https://img.shields.io/badge/works-offline-2d2d2d?style=flat-square)
+![Single file](https://img.shields.io/badge/one%20HTML%20file-2d2d2d?style=flat-square)
+![Dependencies](https://img.shields.io/badge/dependencies-none-2d2d2d?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-4caf50?style=flat-square)
 
-Fragetexte, Antwortoptionen und deren Reihenfolge stammen **wörtlich aus dem amtlichen
-Gesamtfragenkatalog des BAMF** ([PDF][bamf], Stand 07.05.2025). Dieses PDF enthält keine
-Lösungen — die Kästchen vor den Antworten sind alle leer.
+<br>
 
-Die richtigen Antworten wurden deshalb aus zwei unabhängigen offenen Datensätzen
-übernommen und **gegeneinander geprüft**:
+<img src="screenshots/cover.png" alt="The exam sheet: question 15 with four checkboxes, the correct answer marked in green, and a Russian explanation below">
 
-| Quelle | Rolle |
-| --- | --- |
-| [BAMF-Gesamtfragenkatalog (PDF)][bamf] | maßgeblicher Wortlaut von Frage und Optionen |
-| [flexsurfer/einburgerungstest][s1] | Lösung, Themenzuordnung |
-| [leben-in-deutschland-scrapper][s2] | Lösung, russische Übersetzung |
+<br><br>
 
-Der Abgleich läuft über den **Text** der richtigen Antwort, nicht über deren Position —
-die beiden Datensätze ordnen die Optionen anders an als das PDF. Ergebnis:
+### [**▶&nbsp; Open the trainer**](https://themaestr-o.github.io/einbuergerungstest/)
 
-* **457 Fragen**: beide Quellen nennen dieselbe Antwort.
-* **3 Fragen** (*Was verbietet das deutsche Grundgesetz?*, Landeshauptstadt von
-  Brandenburg und von Hessen): in Quelle 2 ist das Lösungsfeld leer, es zählt Quelle 1.
-* **1 Frage** (*Wappen der DDR*): die Quellen widersprechen sich. Entschieden am Bild
-  aus dem PDF — Hammer, Zirkel und Ährenkranz ist **Bild 4**.
-* **37 Fragen wurden zusätzlich am Bild selbst nachgeprüft**, weil die Nummerierung
-  „Bild 1–4“ je nach Quelle anders ausfallen kann: 19 Wappen- und Flaggenfragen,
-  16 Landkarten („Welches Bundesland ist …?“), der Stimmzettel und die Besatzungszonen.
-  36 bestätigten die Datensätze, eine korrigierte sie (Wappen der DDR).
+</div>
 
-Bekannte Eigenheit: In Frage 201 steht im amtlichen PDF bei einer *falschen* Antwort
-„Niedersachen“ statt „Niedersachsen“. Der Tippfehler ist bewusst nicht korrigiert —
-der Text folgt dem Original.
+<br>
 
-### Erklärungen
+## What it is
 
-Zu jeder der 460 Fragen steht im Feld `why` eine kurze russische Erklärung, warum die
-Antwort richtig ist. Die maschinellen „Erklärungen“ aus Quelle 2 waren dafür unbrauchbar:
-bei 228 von 458 Fragen steht dort nur der Platzhalter „Важный вопрос для жизни в
-Германии“, und die übrigen umschreiben das Thema, statt die Antwort zu begründen. Die
-Erklärungen im Repository sind daher neu geschrieben; die 160 Landesfragen folgen zehn
-festen Mustern und werden aus einer Tabelle je Bundesland erzeugt.
+The **Einbürgerungstest** — the 33-question test on German law, history and society you have to pass for citizenship — as **one HTML file you can double-click**.
 
-Die maschinellen Übersetzungen aus Quelle 2 liegen weiterhin in `data/questions.json`,
-die App zeigt sie nicht an — geprüft wird ohnehin nur der deutsche Text.
+No installation, no server, no account, no network. Questions, answers, all 100 pictures and the fonts are inside the file. Put it on a USB stick, mail it to yourself, open it on a phone in flight mode: it works.
 
-## Neu bauen
+All **300 nationwide** and **160 state-specific** questions from the official catalogue of the [Federal Office for Migration and Refugees][bamf], as published on **7 May 2025**. The wording and the order of the options are the ones you will see in the exam.
+
+<br>
+
+## Two ways to work with it
+
+| | |
+|---|---|
+| **Prüfung** | The real thing: 33 questions — 30 nationwide plus 3 from your federal state — a 60-minute clock, no feedback until you hand it in. Pass mark 17. The result screen lists every question you got wrong, with the right answer and why it is right. |
+| **Training** | Ten topics, or the ten questions of your state. Each answer resolves immediately and explains itself. Questions you got wrong and questions you have never seen come back more often. |
+
+Your progress lives in the browser: which questions you have seen, which ones you keep failing, the state you picked, past exam scores. Nothing is uploaded anywhere — and nothing to log in to.
+
+Keyboard on a desktop: `1`–`4` to answer, `Enter` for the next question. On a phone the layout reflows and the answer rows grow into proper tap targets.
+
+<br>
+
+## Where the answers come from
+
+The official catalogue is a [191-page PDF][bamf]. It contains every question and every option — and **no answers**: the little boxes in front of the options are all empty.
+
+So the correct answers come from two independent open datasets, **checked against each other**:
+
+| Source | What it contributes |
+|---|---|
+| [BAMF question catalogue (PDF)][bamf] | the authoritative wording of every question and option |
+| [flexsurfer/einburgerungstest][s1] | answer key, topic grouping |
+| [leben-in-deutschland-scrapper][s2] | answer key |
+
+The comparison runs on the **text** of the correct answer, never on its position — both datasets order the options differently from the PDF. The outcome:
+
+- **457 questions** — both sources name the same answer.
+- **3 questions** — *Was verbietet das deutsche Grundgesetz?* and the capitals of Brandenburg and Hessen — have an empty answer field in the second source, so the first one decides.
+- **1 question** — the coat of arms of the GDR — is a genuine conflict. Settled by looking at the artwork in the PDF: hammer, compass and wreath of rye is **picture 4**. The dataset that said picture 2 was wrong.
+- **37 questions were additionally verified against the pictures themselves**, because the numbering "picture 1–4" can differ between sources: 19 coats of arms and flags, 16 maps (*Welches Bundesland ist …?*), the ballot paper and the occupation zones. 36 confirmed the datasets, one corrected them.
+
+One deliberate oddity: in question 201 the official PDF misspells "Niedersachsen" as "Niedersachen" — in a *wrong* option. The typo is kept. The text follows the original.
+
+<br>
+
+## The explanations
+
+Every one of the 460 questions carries a one-sentence explanation in Russian of **why that answer is the right one**, with the German term kept where it is worth memorising:
+
+> **Was verbietet das deutsche Grundgesetz?**
+> Статья 12 Основного закона запрещает принудительный труд (Zwangsarbeit).
+
+The machine-written "explanations" that ship with the second dataset were not usable: 228 of 458 are the placeholder *«Важный вопрос для жизни в Германии»*, and the rest paraphrase the topic instead of justifying the answer. These were written from scratch. The 160 state questions follow ten fixed patterns and are generated per state from one table.
+
+<br>
+
+## Building it
 
 ```bash
-python3 -m venv venv && ./venv/bin/pip install pypdf pillow
-curl -Lo katalog.pdf "https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/Einbuergerung/gesamtfragenkatalog-lebenindeutschland.pdf?__blob=publicationFile"
-python3 build/build_html.py          # data/ + build/app.template.html -> index.html
+python3 -m venv .venv && ./.venv/bin/pip install pypdf pillow
+python3 build/fetch_fonts.py     # once: fonts as data: URIs, so the file needs no network
+python3 build/build_html.py      # data/ + build/app.template.html  ->  index.html
 ```
 
-* `data/questions.json` — die 460 Fragen mit Lösung, Thema, Bildern und Übersetzung
-* `data/images/` — 100 WebP-Bilder aus dem PDF
-* `build/app.template.html` — die App (Platzhalter `__DATA__` / `__IMAGES__`)
-* `tools/` — die Aufbereitung: PDF-Text mit Koordinaten lesen, Aufgaben zerlegen,
-  Trennfehler des PDFs reparieren, Lösungen abgleichen, Bilder mit ihrer Position
-  auf der Seite den Fragen zuordnen
+| | |
+|---|---|
+| `index.html` | the finished trainer, everything embedded |
+| `data/questions.json` | 460 questions with answer, topic, images, explanation |
+| `data/images/` | 100 WebP pictures extracted from the PDF |
+| `build/app.template.html` | the app itself, with `__DATA__` / `__IMAGES__` placeholders |
+| `tools/` | the pipeline: read the PDF text with coordinates, split it into questions, repair the PDF's broken word spacing, reconcile the answer keys, map each image to its question by position on the page |
 
-## Rechtliches
+<br>
 
-Die Fragen und Bilder sind amtliches Material des Bundesamts für Migration und
-Flüchtlinge und werden hier unverändert wiedergegeben. Dieses Projekt steht in keiner
-Verbindung zum BAMF und ist keine offizielle Prüfungsvorbereitung. Der Code steht unter
-der MIT-Lizenz.
+## Legal
+
+The questions, options and images are official material of the Federal Office for Migration and Refugees and are reproduced unchanged. This project is not affiliated with the BAMF and is not official exam preparation. The code is MIT.
 
 [bamf]: https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/Einbuergerung/gesamtfragenkatalog-lebenindeutschland.html
 [s1]: https://github.com/flexsurfer/einburgerungstest

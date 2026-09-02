@@ -10,11 +10,13 @@ GitHub Pages und als Artifact.
 import base64
 import json
 import pathlib
+import re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 TPL = ROOT / 'build' / 'app.template.html'
 DATA = ROOT / 'data' / 'questions.json'
 IMGDIR = ROOT / 'data' / 'images'
+FONTS = ROOT / 'build' / 'fonts.inline.css'
 OUT = ROOT / 'index.html'
 FRAGMENT = ROOT / 'build' / 'artifact.html'
 
@@ -45,6 +47,12 @@ slim = [{
 } for q in questions]
 
 html = TPL.read_text(encoding='utf-8')
+
+# Schriften mitliefern statt nachladen: die Datei soll ohne Netz gleich aussehen
+if FONTS.exists():
+    html = re.sub(r'<link rel="preconnect"[^>]*>\n?', '', html)
+    html = re.sub(r'<link rel="stylesheet" href="https://fonts\.googleapis\.com[^>]*>',
+                  '<style>\n' + FONTS.read_text(encoding='utf-8') + '</style>', html)
 html = html.replace('__DATA__', json.dumps(slim, ensure_ascii=False, separators=(',', ':')))
 html = html.replace('__IMAGES__', json.dumps(images, separators=(',', ':')))
 # eigenständige Datei: vollständiges Dokument mit Zeichensatz-Angabe,

@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 katalog.pdf
 build/artifact.html
+.venv/
