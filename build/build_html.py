@@ -16,6 +16,17 @@ TPL = ROOT / 'build' / 'app.template.html'
 DATA = ROOT / 'data' / 'questions.json'
 IMGDIR = ROOT / 'data' / 'images'
 OUT = ROOT / 'index.html'
+FRAGMENT = ROOT / 'build' / 'artifact.html'
+
+HEAD = '''<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+'''
+MID = '</head>\n<body>\n'
+TAIL = '\n</body>\n</html>\n'
 
 questions = json.loads(DATA.read_text(encoding='utf-8'))
 
@@ -38,7 +49,12 @@ slim = [{
 html = TPL.read_text(encoding='utf-8')
 html = html.replace('__DATA__', json.dumps(slim, ensure_ascii=False, separators=(',', ':')))
 html = html.replace('__IMAGES__', json.dumps(images, separators=(',', ':')))
-OUT.write_text(html, encoding='utf-8')
+# eigenständige Datei: vollständiges Dokument mit Zeichensatz-Angabe,
+# sonst liest der Browser die UTF-8-Umlaute beim Öffnen von der Platte als Latin-1
+head, body = html.split('<!--/head-->', 1)
+OUT.write_text(HEAD + head + MID + body.lstrip('\n') + TAIL, encoding='utf-8')
+# dieselbe Seite ohne Dokumentrahmen, für die Veröffentlichung als Artifact
+FRAGMENT.write_text(html.replace('<!--/head-->\n', ''), encoding='utf-8')
 
 print(f'{OUT.relative_to(ROOT)}: {OUT.stat().st_size/1e6:.2f} MB')
 print(f'  {len(slim)} Fragen, {len(images)} Bilder eingebettet')
