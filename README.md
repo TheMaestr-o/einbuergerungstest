@@ -15,6 +15,7 @@ Antworten und alle Bilder stecken in der Datei.
   60 Minuten, bestanden ab 17 richtigen Antworten
 * **Training nach Themen** mit sofortiger Auflösung, Fehlerspeicher und Wiederholung —
   falsch beantwortete und noch nie gesehene Fragen kommen häufiger dran
+* zu **jeder** Frage eine kurze Erklärung auf Russisch, warum genau diese Antwort stimmt
 * auf dem Telefon genauso bedienbar wie am Rechner
 * Tastatur am Rechner: `1`–`4` antworten, `Enter` weiter; Fortschritt bleibt im Browser gespeichert
 
@@ -50,11 +51,17 @@ Bekannte Eigenheit: In Frage 201 steht im amtlichen PDF bei einer *falschen* Ant
 „Niedersachen“ statt „Niedersachsen“. Der Tippfehler ist bewusst nicht korrigiert —
 der Text folgt dem Original.
 
-In `data/questions.json` liegen zu 458 Fragen zusätzlich russische Übersetzungen aus
-Quelle 2. Die App zeigt sie **nicht** an: sie sind maschinell erzeugt und stellenweise
-ungenau (etwa werden „Ministerpräsident“ und „Premierminister“ gleich übersetzt), und
-geprüft wird ohnehin nur der deutsche Text. Die Daten bleiben im Repository, falls sie
-später doch gebraucht werden.
+### Erklärungen
+
+Zu jeder der 460 Fragen steht im Feld `why` eine kurze russische Erklärung, warum die
+Antwort richtig ist. Die maschinellen „Erklärungen“ aus Quelle 2 waren dafür unbrauchbar:
+bei 228 von 458 Fragen steht dort nur der Platzhalter „Важный вопрос для жизни в
+Германии“, und die übrigen umschreiben das Thema, statt die Antwort zu begründen. Die
+Erklärungen im Repository sind daher neu geschrieben; die 160 Landesfragen folgen zehn
+festen Mustern und werden aus einer Tabelle je Bundesland erzeugt.
+
+Die maschinellen Übersetzungen aus Quelle 2 liegen weiterhin in `data/questions.json`,
+die App zeigt sie nicht an — geprüft wird ohnehin nur der deutsche Text.
 
 ## Neu bauen
 
