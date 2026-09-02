@@ -213,6 +213,21 @@ select{
 .tbl td.n{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;text-align:right;width:1%;white-space:nowrap}
 .note{font-size:13px;color:var(--ink-3);padding:14px 20px;border-top:1px solid var(--rule-soft);max-width:70ch}
 .note a{color:var(--ink-2)}
+details.legal{border-top:1px solid var(--rule-soft)}
+details.legal > summary{
+  list-style:none;cursor:pointer;padding:13px 20px;
+  font-family:Archivo,sans-serif;font-size:13.5px;font-weight:600;color:var(--ink-2);
+  display:flex;align-items:center;gap:8px
+}
+details.legal > summary::-webkit-details-marker{display:none}
+details.legal > summary::before{content:'+';color:var(--ink-3);font-family:"IBM Plex Mono",monospace}
+details.legal[open] > summary::before{content:'–'}
+details.legal > summary:hover{color:var(--ink)}
+.legal-bd{padding:0 20px 18px;max-width:72ch;font-size:14.5px;line-height:1.5;color:var(--ink-2)}
+.legal-bd p{margin:0 0 10px}
+.legal-bd h4{font-family:Archivo,sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:16px 0 6px}
+.legal-bd a{color:var(--ink-2)}
 
 /* ---------- Telefon ---------- */
 @media (max-width:620px){
@@ -325,9 +340,71 @@ select{
       </div>
       <p class="note">Fragen, Antwortoptionen und Bilder stammen wörtlich aus dem
       <a href="https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/Einbuergerung/gesamtfragenkatalog-lebenindeutschland.html">amtlichen
-      Gesamtfragenkatalog</a> des Bundesamts für Migration und Flüchtlinge, Stand 07.05.2025.
-      Dieser Übungsbogen ist ein privates Projekt, steht in keiner Verbindung zum BAMF und ist
-      keine amtliche Prüfungsvorbereitung.</p>
+      Gesamtfragenkatalog</a> des Bundesamts für Migration und Flüchtlinge, Stand 07.05.2025.</p>
+    </section>
+
+    <section class="sheet">
+      <div class="sheet-hd"><h2>Rechtliches</h2><span class="sub">Datenschutz · Projekt · Haftung</span></div>
+
+      <details class="legal">
+        <summary>Datenschutz</summary>
+        <div class="legal-bd">
+          <p><strong>Diese Seite sammelt nichts.</strong> Keine Anmeldung, keine Cookies, keine
+          Zählpixel, keine Statistik, keine Werbung. Es gibt keinen Server, an den sie etwas
+          senden könnte.</p>
+
+          <h4>Was gespeichert wird</h4>
+          <p>Ihr Lernfortschritt — welche Fragen Sie gesehen haben, welche Sie falsch hatten, Ihr
+          Bundesland und die Ergebnisse vergangener Prüfungen — liegt im <em>local storage</em>
+          Ihres Browsers, also auf Ihrem eigenen Gerät. Diese Daten verlassen das Gerät nicht und
+          sind für niemanden sonst lesbar. Sie löschen sie jederzeit oben unter „Einstellungen“ mit
+          <em>Fortschritt löschen</em> oder über die Websitedaten Ihres Browsers.</p>
+
+          <h4>Was nachgeladen wird</h4>
+          <p>Nichts. Fragen, Bilder und Schriften stecken in dieser Datei. Es werden keine
+          Schriftarten, Skripte oder Bilder von fremden Servern geholt — die Seite funktioniert
+          vollständig ohne Internet.</p>
+
+          <h4>Beim Aufruf über das Internet</h4>
+          <p>Wird diese Seite über <em>github.io</em> aufgerufen, liefert sie die GitHub Inc.
+          (88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA) aus. Dabei fallen wie bei
+          jedem Webserver technische Zugriffsdaten an, unter anderem Ihre IP-Adresse; darauf hat der
+          Betreiber dieser Seite keinen Zugriff. Es gilt die
+          <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung
+          von GitHub</a>. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO — das berechtigte Interesse
+          an einer technisch fehlerfreien Auslieferung. Öffnen Sie die Datei stattdessen lokal von
+          Ihrer Festplatte, entsteht überhaupt keine Verbindung.</p>
+
+          <h4>Verantwortlich</h4>
+          <p>[Vor- und Nachname eintragen]<br>[Anschrift eintragen]<br>[E-Mail eintragen]</p>
+        </div>
+      </details>
+
+      <details class="legal">
+        <summary>Über dieses Projekt</summary>
+        <div class="legal-bd">
+          <p>Ein privates Projekt von <strong>TheMaestr-o</strong> — Gestaltung, Aufbereitung der
+          Daten und Programmierung. Die Fragen, Antwortoptionen und Bilder stammen unverändert aus
+          dem amtlichen Gesamtfragenkatalog des Bundesamts für Migration und Flüchtlinge (Stand
+          07.05.2025) und sind nicht von mir verfasst.</p>
+
+          <p>Diese Seite steht in <strong>keiner Verbindung zum BAMF</strong> oder einer anderen
+          Behörde, ist kein amtliches Angebot und keine offizielle Prüfungsvorbereitung. Sie wird
+          weder vom BAMF betrieben noch geprüft.</p>
+
+          <h4>Haftung</h4>
+          <p>Die richtigen Antworten wurden gegen zwei unabhängige Quellen geprüft und die Bildfragen
+          zusätzlich am Katalog selbst. Trotzdem kann ich für Richtigkeit und Aktualität nicht
+          einstehen — maßgeblich ist allein der amtliche Fragenkatalog des BAMF. Aus der Nutzung
+          dieser Übungsseite lässt sich kein Anspruch ableiten, und ein bestandener Übungsdurchgang
+          sagt nichts über die tatsächliche Prüfung.</p>
+
+          <h4>Quelltext</h4>
+          <p>Der Quelltext liegt offen auf
+          <a href="https://github.com/TheMaestr-o/einbuergerungstest">GitHub</a> (MIT-Lizenz). Das
+          amtliche Material fällt nicht unter diese Lizenz.</p>
+        </div>
+      </details>
     </section>
   </section>
 
