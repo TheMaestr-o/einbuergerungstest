@@ -133,8 +133,15 @@ header.top{
   padding-top:env(safe-area-inset-top);
 }
 .top-in{max-width:820px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:12px}
-.brand{font-family:Archivo,sans-serif;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
-.brand b{display:block;letter-spacing:.02em;font-size:15px;text-transform:none}
+.brand{display:flex;align-items:center;gap:11px;min-width:0}
+/* Nationalfarben als Balken - kein Hoheitszeichen, keine Behörde */
+.flagbar{flex:none;width:7px;height:34px;border-radius:1px;overflow:hidden;
+  background:linear-gradient(#111 0 33.34%,#D40000 33.34% 66.67%,#F5C400 66.67%)}
+.brand .t{min-width:0}
+.brand .n{font-family:Archivo,sans-serif;font-weight:700;font-size:16px;letter-spacing:-.01em;
+  display:block;line-height:1.15}
+.brand .s{font-family:Archivo,sans-serif;font-weight:600;font-size:10px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink-3);display:block;margin-top:1px}
 .top-sp{flex:1}
 .chip{
   font-family:Archivo,sans-serif;font-size:12px;font-weight:600;letter-spacing:.06em;
@@ -299,8 +306,9 @@ select{
   body{font-size:16.5px}
   .wrap{padding-left:10px;padding-right:10px}
   .top-in{padding:9px 12px;gap:8px}
-  .brand{font-size:10px;letter-spacing:.1em}
-  .brand b{font-size:14px}
+  .brand{gap:9px}
+  .brand .n{font-size:14.5px}
+  .brand .s{font-size:9px;letter-spacing:.1em}
   .sheet{border-radius:2px}
   .sheet + .sheet{margin-top:12px}
   .sheet-hd{flex-wrap:wrap;gap:2px 10px;padding:12px 14px}
@@ -334,7 +342,7 @@ select{
   .note{padding:13px 14px}
 }
 @media (max-width:380px){
-  .brand{font-size:9px}
+  .brand .n{font-size:13.5px}
   .pics{grid-template-columns:repeat(2,1fr)}
   .qtext{font-size:18px}
 }
@@ -345,7 +353,11 @@ select{
 <body>
 <header class="top">
   <div class="top-in">
-    <div class="brand ui">Bundesrepublik Deutschland<b>Einbürgerungstest</b></div>
+    <div class="brand">
+      <span class="flagbar" aria-hidden="true"></span>
+      <span class="t"><span class="n">Einbürgerungstest</span>
+      <span class="s">Übungsbogen · nicht amtlich</span></span>
+    </div>
     <div class="top-sp"></div>
       <button class="chip" id="thBtn" title="Hell / Dunkel">◐</button>
   </div>
@@ -398,8 +410,11 @@ select{
         <button class="chip" id="shufBtn" aria-pressed="false">Antworten mischen</button>
         <button class="chip" id="resetBtn">Fortschritt löschen</button>
       </div>
-      <p class="note">Fragen, Antwortoptionen und Bilder stammen wörtlich aus dem amtlichen
-      Gesamtfragenkatalog des BAMF, Stand 07.05.2025.</p>
+      <p class="note">Fragen, Antwortoptionen und Bilder stammen wörtlich aus dem
+      <a href="https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/Einbuergerung/gesamtfragenkatalog-lebenindeutschland.html">amtlichen
+      Gesamtfragenkatalog</a> des Bundesamts für Migration und Flüchtlinge, Stand 07.05.2025.
+      Dieser Übungsbogen ist ein privates Projekt, steht in keiner Verbindung zum BAMF und ist
+      keine amtliche Prüfungsvorbereitung.</p>
     </section>
   </section>
 
