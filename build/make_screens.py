@@ -97,11 +97,8 @@ for k, name in enumerate(['q020_1', 'q020_2', 'q020_3', 'q020_4']):
     d.rounded_rectangle([bx, 240, bx + 148, 400], 2, outline=RULE_S)
     if os.path.exists(p):
         im = Image.open(p).convert('RGBA')
-        bg = Image.new('RGBA', im.size, (0xFB, 0xFB, 0xF9, 255))
-        bg.alpha_composite(im)
-        im = bg.convert('RGB')
         im.thumbnail((110, 110))
-        img.paste(im, (bx + (148 - im.width) // 2, 258 + (110 - im.height) // 2))
+        img.paste(im, (bx + (148 - im.width) // 2, 258 + (110 - im.height) // 2), im)
     d.text((bx + 12, 374), f'Bild {k + 1}', font=mo(12), fill=INK3)
 d.rounded_rectangle([48, 416, 150, 450], 2, outline=RULE)
 d.text((72, 424), 'Zurück', font=ab(14), fill=INK3)

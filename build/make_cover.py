@@ -80,13 +80,15 @@ for label, right in opts:
     d.line([(sx + 44, y + 38), (sx + sw - 26, y + 38)], fill=RULE_S)
     y += 48
 
-# Erklärungsblock
-ey = y + 10
-d.rectangle([sx + 24, ey, sx + sw - 26, ey + 58], fill=(0xF6, 0xF1, 0xE3))
-d.rectangle([sx + 24, ey, sx + 27, ey + 58], fill=MARK)
-track(d, (sx + 42, ey + 10), 'ПОЧЕМУ ТАК', narrow_b(13), INK3, 2.2)
-d.text((sx + 42, ey + 26), 'Статья 12 Основного закона запрещает принудительный труд.',
-       font=serif(19), fill=INK2)
+# Wortkarten-Zeile: deutsche Begriffe unter der Frage
+wy = y + 12
+wx = sx + 122
+for term in ('Zwangsarbeit', 'verbieten', 'das Grundgesetz'):
+    tw = d.textlength(term, arial_b(19))
+    d.text((wx, wy), term, font=arial_b(19), fill=INK2)
+    for dx in range(0, int(tw), 5):
+        d.rectangle([wx + dx, wy + 26, wx + dx + 2, wy + 27], fill=MARK)
+    wx += tw + 26
 
 # Wappenreihe unten
 row = ['data/images/q020_1.webp', 'data/images/q300_1.webp', 'data/images/q310_2.webp',
@@ -96,9 +98,9 @@ x = 56
 for p in row:
     if not os.path.exists(p): continue
     w = Image.open(p).convert('RGBA')
-    bg = Image.new('RGBA', w.size, (0xEF, 0xF0, 0xEC, 255)); bg.alpha_composite(w)
-    w = bg.convert('RGB'); w.thumbnail((78, 78))
-    img.paste(w, (x, 592 + (78 - w.height) // 2))
+    w.thumbnail((78, 78))
+    # freigestellt aufs Papier setzen, kein weißer Kasten
+    img.paste(w, (x, 592 + (78 - w.height) // 2), w)
     x += 92
 
 foot = '33 Fragen  ·  60 Minuten  ·  bestanden ab 17'

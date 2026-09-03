@@ -37,7 +37,11 @@
 
 <br>
 
-### [**▶&nbsp; Trainer öffnen**](https://themaestr-o.github.io/einbuergerungstest/)
+[![Trainer öffnen](https://img.shields.io/badge/%E2%96%B6%20%20TRAINER%20%C3%96FFNEN-b8891b?style=for-the-badge&labelColor=15181A)](https://themaestr-o.github.io/einbuergerungstest/)
+&nbsp;&nbsp;
+[![index.html laden](https://img.shields.io/badge/index.html%20laden-2D2D2D?style=for-the-badge&labelColor=15181A)](https://github.com/TheMaestr-o/einbuergerungstest/raw/main/index.html)
+
+<sub>im Browser öffnen · oder die Datei laden und offline behalten</sub>
 
 </div>
 
