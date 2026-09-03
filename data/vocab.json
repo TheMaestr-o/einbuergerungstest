@@ -1160,5 +1160,306 @@
   "ru": "вербовать, нанимать",
   "bau": "an + werben (рекламировать, добиваться)",
   "merk": "Werbung — реклама. Angeworben wurden Gastarbeiter — их завербовали на работу."
+ },
+ {
+  "k": "anwesenheitspflicht",
+  "w": "die Anwesenheitspflicht",
+  "ru": "обязанность присутствовать (на занятиях)",
+  "bau": "Anwesenheit (присутствие) + Pflicht (обязанность)",
+  "merk": "anwesend — присутствующий, abwesend — отсутствующий. Ребёнок обязан не просто числиться, а быть на уроке."
+ },
+ {
+  "k": "außenbeziehung",
+  "w": "die Außenbeziehungen",
+  "ru": "внешние связи",
+  "bau": "außen (снаружи) + Beziehung (связь, отношение)",
+  "merk": "beziehen — относиться; Beziehung — отношения, в том числе личные. Сенатора по внешним связям у городов-земель нет: это дело федерации."
+ },
+ {
+  "k": "religionsunterricht",
+  "w": "der Religionsunterricht",
+  "ru": "урок религии в школе",
+  "bau": "Religion + Unterricht (урок, преподавание)",
+  "merk": "unterrichten — преподавать. До 14 лет за участие решают родители, после — сам ребёнок."
+ },
+ {
+  "k": "stimmabgabe",
+  "w": "die Stimmabgabe",
+  "ru": "подача голоса, голосование",
+  "bau": "Stimme (голос) + Abgabe (отдача, от abgeben)",
+  "merk": "Отдать голос — Stimme abgeben. Никого нельзя zu einer bestimmten Stimmabgabe zwingen."
+ },
+ {
+  "k": "ungleichbehandlung",
+  "w": "die Ungleichbehandlung",
+  "ru": "неравное обращение",
+  "bau": "un- (не) + gleich (равный) + Behandlung (обращение)",
+  "merk": "Три детали в одном слове. Государству она запрещена статьёй 3 Grundgesetz."
+ },
+ {
+  "k": "pressezensur",
+  "w": "die Pressezensur",
+  "ru": "цензура прессы",
+  "bau": "Presse + Zensur",
+  "merk": "Zensur — как русская «цензура». В демократии её нет, это признак диктатуры."
+ },
+ {
+  "k": "staatsgewalt",
+  "w": "die Staatsgewalt",
+  "ru": "государственная власть",
+  "bau": "Staat + Gewalt (власть)",
+  "merk": "Alle Staatsgewalt geht vom Volke aus — вся власть исходит от народа, формула Volkssouveränität."
+ },
+ {
+  "k": "privatpolizei",
+  "w": "die Privatpolizei",
+  "ru": "частная полиция",
+  "bau": "privat + Polizei",
+  "merk": "Её в правовом государстве нет: арестовывать (verhaften) может только государство."
+ },
+ {
+  "k": "verhaft",
+  "w": "verhaften",
+  "ru": "арестовывать",
+  "bau": "ver- + Haft (заключение)",
+  "merk": "Haft — арест, заключение; Haftstrafe — тюремный срок. Verhaften darf nur die Polizei."
+ },
+ {
+  "k": "lebensversicherung",
+  "w": "die Lebensversicherung",
+  "ru": "страхование жизни",
+  "bau": "Leben (жизнь) + Versicherung",
+  "merk": "Единственная из перечисляемых страховок, которая частная: в gesetzliche Sozialversicherung не входит."
+ },
+ {
+  "k": "behauptung",
+  "w": "die Behauptung",
+  "ru": "утверждение",
+  "bau": "от behaupten — утверждать",
+  "merk": "Свобода мнения кончается на falsche Behauptungen über Personen — ложных утверждениях о людях."
+ },
+ {
+  "k": "verbreitung",
+  "w": "die Verbreitung",
+  "ru": "распространение",
+  "bau": "ver- + breit (широкий)",
+  "merk": "breit — широкий; verbreiten — «делать широким», распространять."
+ },
+ {
+  "k": "nachteil",
+  "w": "der Nachteil",
+  "ru": "минус, ущерб, невыгода",
+  "bau": "nach (после) + Teil (часть)",
+  "merk": "Пара: Vorteil — преимущество, Nachteil — недостаток. За свой выбор на выборах Nachteile получить нельзя."
+ },
+ {
+  "k": "beeinfluss",
+  "w": "beeinflussen",
+  "ru": "влиять, воздействовать",
+  "bau": "be- + Einfluss (влияние) от fließen (течь)",
+  "merk": "Fluss — река; Einfluss — «втекание», влияние. Избирателя nicht beeinflussen — не давить."
+ },
+ {
+  "k": "zwing",
+  "w": "zwingen",
+  "ru": "принуждать",
+  "bau": "—",
+  "merk": "Zwang — принуждение, gezwungen — принуждённый, Zwangsarbeit — принудительный труд. Один корень на три слова теста."
+ },
+ {
+  "k": "erwerbstätig",
+  "w": "die Erwerbstätigen",
+  "ru": "работающие, занятые",
+  "bau": "Erwerb (заработок) + tätig (деятельный)",
+  "merk": "erwerben — приобретать, зарабатывать; Tätigkeit — деятельность. Большинство из них beschäftigt — наняты."
+ },
+ {
+  "k": "beschäftig",
+  "w": "beschäftigt",
+  "ru": "занятый, работающий по найму",
+  "bau": "be- + Schaft/schaffen (делать)",
+  "merk": "Beschäftigung — занятость, Arbeitgeber beschäftigt jemanden — нанимает."
+ },
+ {
+  "k": "staatsangehörig",
+  "w": "die Staatsangehörigkeit",
+  "ru": "гражданство",
+  "bau": "Staat + angehören (принадлежать)",
+  "merk": "gehören — принадлежать; Staatsangehörige — граждане, принадлежащие государству."
+ },
+ {
+  "k": "kommune",
+  "w": "die Kommune",
+  "ru": "община, муниципалитет",
+  "bau": "латинское communis — общий",
+  "merk": "Третья ступень: Bund, Länder, Kommunen. Прилагательное kommunal — местный, отсюда Kommunalwahlen."
+ },
+ {
+  "k": "schulwesen",
+  "w": "das Schulwesen",
+  "ru": "школьное дело, система образования",
+  "bau": "Schule + Wesen (сущность, система)",
+  "merk": "Хвост -wesen значит «всё, что относится к»: Gesundheitswesen — здравоохранение, Bankwesen — банковское дело."
+ },
+ {
+  "k": "verhältniswahl",
+  "w": "das Verhältniswahlrecht",
+  "ru": "пропорциональная избирательная система",
+  "bau": "Verhältnis (соотношение) + Wahlrecht",
+  "merk": "Verhältnis — пропорция, отношение. Места делятся пропорционально Zweitstimmen. Пара к Mehrheitswahlrecht — мажоритарной."
+ },
+ {
+  "k": "mindestanteil",
+  "w": "der Mindestanteil",
+  "ru": "минимальная доля",
+  "bau": "mindest (минимальный) + Anteil (доля)",
+  "merk": "mindestens — как минимум; Teil — часть, Anteil — доля. Минимум голосов для парламента — 5 %-Hürde."
+ },
+ {
+  "k": "regierungsbildung",
+  "w": "die Regierungsbildung",
+  "ru": "формирование правительства",
+  "bau": "Regierung + Bildung (образование, формирование)",
+  "merk": "bilden — формировать. Мелкие партии её erschweren — затрудняют, потому и ввели барьер."
+ },
+ {
+  "k": "interessenverband",
+  "w": "der Interessenverband",
+  "ru": "объединение по интересам, лобби-организация",
+  "bau": "Interesse + Verband (союз, объединение)",
+  "merk": "binden — связывать, Verband — связка, союз. Gewerkschaften — Interessenverbände der Arbeitnehmer."
+ },
+ {
+  "k": "erziehungsberechtigt",
+  "w": "die Erziehungsberechtigten",
+  "ru": "законные представители ребёнка",
+  "bau": "Erziehung (воспитание) + berechtigt (уполномоченный)",
+  "merk": "Не обязательно родители: тот, у кого есть Recht воспитывать."
+ },
+ {
+  "k": "lehrstelle",
+  "w": "die Lehrstelle",
+  "ru": "место для профессионального обучения на предприятии",
+  "bau": "Lehre (учёба ремеслу) + Stelle (место)",
+  "merk": "Lehre — ученичество, Lehrling — ученик. Искать её помогает BIZ."
+ },
+ {
+  "k": "behinderung",
+  "w": "die Behinderung",
+  "ru": "инвалидность, ограничение возможностей",
+  "bau": "от behindern — мешать, препятствовать",
+  "merk": "hindern — препятствовать. Дискриминировать wegen einer Behinderung запрещено."
+ },
+ {
+  "k": "hautfarbe",
+  "w": "die Hautfarbe",
+  "ru": "цвет кожи",
+  "bau": "Haut (кожа) + Farbe (цвет)",
+  "merk": "Отказ в работе из-за Hautfarbe — прямая Diskriminierung."
+ },
+ {
+  "k": "vergebung",
+  "w": "die Vergebung",
+  "ru": "прощение",
+  "bau": "от vergeben — прощать",
+  "merk": "geben — давать, vergeben — «отдать» обиду, простить. Brandt bat um Vergebung в Варшаве."
+ },
+ {
+  "k": "gebetshaus",
+  "w": "das Gebetshaus",
+  "ru": "дом молитвы",
+  "bau": "Gebet (молитва) + Haus",
+  "merk": "beten — молиться, Gebet — молитва. Еврейское Gebetshaus — Synagoge."
+ },
+ {
+  "k": "wirtschaftswunder",
+  "w": "das Wirtschaftswunder",
+  "ru": "экономическое чудо (1950-е)",
+  "bau": "Wirtschaft (экономика) + Wunder (чудо)",
+  "merk": "Wunder — чудо, wunderbar — чудесный. Быстрый подъём ФРГ после войны."
+ },
+ {
+  "k": "gründungsmitglied",
+  "w": "das Gründungsmitglied",
+  "ru": "государство-основатель",
+  "bau": "Gründung (основание) + Mitglied (член)",
+  "merk": "ФРГ — Gründungsmitglied der EU: была с самого начала."
+ },
+ {
+  "k": "zusammenschluss",
+  "w": "der Zusammenschluss",
+  "ru": "объединение, слияние",
+  "bau": "zusammen (вместе) + Schluss (от schließen — закрывать, смыкать)",
+  "merk": "«Сомкнуться вместе». Europäische Integration — это Zusammenschluss europäischer Staaten."
+ },
+ {
+  "k": "militärbündnis",
+  "w": "das Militärbündnis",
+  "ru": "военный союз",
+  "bau": "Militär + Bündnis (союз, от binden — связывать)",
+  "merk": "Bund, Bündnis, verbinden — один корень «связывать». ГДР состояла в Warschauer Pakt, ФРГ — в НАТО."
+ },
+ {
+  "k": "geheimdienst",
+  "w": "der Geheimdienst",
+  "ru": "спецслужба, разведка",
+  "bau": "geheim (тайный) + Dienst (служба)",
+  "merk": "dienen — служить. Тайная служба ГДР — die Stasi."
+ },
+ {
+  "k": "staatssicherheit",
+  "w": "die Staatssicherheit",
+  "ru": "государственная безопасность",
+  "bau": "Staat + Sicherheit (безопасность, от sicher)",
+  "merk": "Das Ministerium für Staatssicherheit сократили до Stasi — по первым слогам двух слов."
+ },
+ {
+  "k": "streik",
+  "w": "der Streik",
+  "ru": "забастовка",
+  "bau": "из английского strike",
+  "merk": "streiken — бастовать. 17 июня 1953: landesweite Streiks по всей ГДР."
+ },
+ {
+  "k": "sektor",
+  "w": "der Sektor",
+  "ru": "сектор",
+  "bau": "интернациональное",
+  "merk": "Берлин был поделён in vier Sektoren, а вся страна — in vier Besatzungszonen. Zone — страна, Sektor — город."
+ },
+ {
+  "k": "abschottung",
+  "w": "die Abschottung",
+  "ru": "отгораживание, изоляция",
+  "bau": "ab + Schott (переборка на корабле)",
+  "merk": "Schott — водонепроницаемая переборка. Eiserner Vorhang — Abschottung Востока от Запада."
+ },
+ {
+  "k": "verbrech",
+  "w": "das Verbrechen",
+  "ru": "преступление (тяжкое)",
+  "bau": "ver- + brechen (ломать)",
+  "merk": "brechen — ломать; Verbrechen — «слом» закона. Nationalsozialistische Verbrechen gegen Juden."
+ },
+ {
+  "k": "behördenleiter",
+  "w": "die Behördenleiterin / der Behördenleiter",
+  "ru": "руководитель ведомства",
+  "bau": "Behörde + Leiter (руководитель, от leiten — вести)",
+  "merk": "leiten — вести, руководить; Leiter ещё и «лестница». Жалуются именно ему."
+ },
+ {
+  "k": "tannenbaum",
+  "w": "der Tannenbaum",
+  "ru": "ёлка",
+  "bau": "Tanne (пихта) + Baum (дерево)",
+  "merk": "О Tannenbaum — известная песня. Schmücken — украшать, рождественский Brauch."
+ },
+ {
+  "k": "vereinte",
+  "w": "die Vereinten Nationen",
+  "ru": "Организация Объединённых Наций (ООН)",
+  "bau": "vereint (объединённый) + Nationen",
+  "merk": "Тот же корень, что в Wiedervereinigung и Verein. Israel основан по Resolution der Vereinten Nationen."
  }
 ]

@@ -62,9 +62,21 @@ briefs = [{'id': b['id'], 'title': hide(b['title']), 'text': hide(b['text'])}
 
 # Wortkarten: welche Karte steckt in welcher Frage
 vocab = json.loads(VOCAB.read_text(encoding='utf-8'))
+def find(text):
+    # nur am Wortanfang suchen: sonst steckt "grenz" in "unbegrenzte"
+    # und "pflicht" in "Anwesenheitspflicht", und die Karte erklärt das
+    # falsche Wort. Von zwei Treffern gewinnt der längere Schlüssel.
+    low = text.lower()
+    hits = [i for i, v in enumerate(vocab) if re.search(r'\b' + re.escape(v['k']), low)]
+    return [i for i in hits
+            if not any(j != i and vocab[i]['k'] in vocab[j]['k'] for j in hits)]
+
 for q, src in zip(slim, questions):
-    hay = (src['question'] + ' ' + ' '.join(src['answers'])).lower()
-    q['vok'] = [i for i, v in enumerate(vocab) if v['k'] in hay] or None
+    answer = src['answers'][src['correct']]
+    # das Wort aus der richtigen Antwort zuerst - es ist das, was zählt
+    first = find(answer)
+    rest = [i for i in find(src['question'] + ' ' + ' '.join(src['answers'])) if i not in first]
+    q['vok'] = (first + rest) or None
 vok = [{'w': v['w'], 'ru': hide(v['ru']), 'bau': hide(v.get('bau')), 'merk': hide(v['merk'])}
        for v in vocab]
 
