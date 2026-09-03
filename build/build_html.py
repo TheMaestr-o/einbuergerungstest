@@ -63,19 +63,39 @@ briefs = [{'id': b['id'], 'title': hide(b['title']), 'text': hide(b['text'])}
 # Wortkarten: welche Karte steckt in welcher Frage
 vocab = json.loads(VOCAB.read_text(encoding='utf-8'))
 def find(text):
-    # nur am Wortanfang suchen: sonst steckt "grenz" in "unbegrenzte"
-    # und "pflicht" in "Anwesenheitspflicht", und die Karte erklärt das
-    # falsche Wort. Von zwei Treffern gewinnt der längere Schlüssel.
-    low = text.lower()
-    hits = [i for i, v in enumerate(vocab) if re.search(r'\b' + re.escape(v['k']), low)]
-    return [i for i in hits
+    """Karten, die zu diesem Text passen.
+
+    Am Wortanfang wird immer gesucht. Am Wortende nur bei Substantiven:
+    deutsche Komposita tragen das Hauptwort hinten (LandesHAUPTSTADT), aber
+    ein kleingeschriebenes "unbegrenzte" darf nicht die Karte "Grenze"
+    auslösen. Von zwei Treffern gewinnt der längere Schlüssel, sonst
+    erklärte "Pflicht" das halbe Wort "Anwesenheitspflicht".
+    """
+    ENDUNGEN = ('', 'e', 'en', 's', 'n', 'er', 'es')
+    hits = set()
+    for word in re.findall(r"[A-Za-zÄÖÜäöüß][A-Za-zÄÖÜäöüß\-]*", text):
+        low = word.lower()
+        noun = word[0].isupper()
+        for i, v in enumerate(vocab):
+            k = v['k']
+            if low.startswith(k):
+                hits.add(i)
+            elif noun and len(low) > len(k) + 1:
+                for e in ENDUNGEN:
+                    if low.endswith(k + e):
+                        hits.add(i)
+                        break
+    return [i for i in sorted(hits)
             if not any(j != i and vocab[i]['k'] in vocab[j]['k'] for j in hits)]
 
 for q, src in zip(slim, questions):
     answer = src['answers'][src['correct']]
     # das Wort aus der richtigen Antwort zuerst - es ist das, was zählt
-    first = find(answer)
-    rest = [i for i in find(src['question'] + ' ' + ' '.join(src['answers'])) if i not in first]
+    # längerer Schlüssel zuerst: "Landeshauptstadt" lehrt mehr als "Land"
+    by_len = lambda ids: sorted(ids, key=lambda i: -len(vocab[i]['k']))
+    first = by_len(find(answer))
+    rest = by_len([i for i in find(src['question'] + ' ' + ' '.join(src['answers']))
+                   if i not in first])
     q['vok'] = (first + rest) or None
 vok = [{'w': v['w'], 'ru': hide(v['ru']), 'bau': hide(v.get('bau')), 'merk': hide(v['merk'])}
        for v in vocab]

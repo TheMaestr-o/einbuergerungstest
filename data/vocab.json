@@ -1461,5 +1461,530 @@
   "ru": "Организация Объединённых Наций (ООН)",
   "bau": "vereint (объединённый) + Nationen",
   "merk": "Тот же корень, что в Wiedervereinigung и Verein. Israel основан по Resolution der Vereinten Nationen."
+ },
+ {
+  "k": "bundestag",
+  "w": "der Bundestag",
+  "ru": "федеральный парламент Германии",
+  "bau": "Bund (федерация) + Tag (здесь «собрание», старое значение)",
+  "merk": "Tag в Bundestag, Landtag, Reichstag — не «день», а съезд. Единственный орган, который выбирает народ напрямую."
+ },
+ {
+  "k": "bundesrat",
+  "w": "der Bundesrat",
+  "ru": "палата земель",
+  "bau": "Bund + Rat (совет)",
+  "merk": "Его не выбирают: там сидят Regierungsvertreter der Bundesländer. Rat — совет, как в Betriebsrat, Stadtrat."
+ },
+ {
+  "k": "bundeskanzler",
+  "w": "die Bundeskanzlerin / der Bundeskanzler",
+  "ru": "федеральный канцлер, глава правительства",
+  "bau": "Bund + Kanzler",
+  "merk": "Реальный правитель страны. Его wählt der Bundestag, а не народ."
+ },
+ {
+  "k": "bundespräsident",
+  "w": "die Bundespräsidentin / der Bundespräsident",
+  "ru": "федеральный президент, глава государства",
+  "bau": "Bund + Präsident",
+  "merk": "Repräsentiert das Land — представляет страну, но не правит. Избирается Bundesversammlung."
+ },
+ {
+  "k": "bundesregierung",
+  "w": "die Bundesregierung",
+  "ru": "федеральное правительство",
+  "bau": "Bund + Regierung",
+  "merk": "Канцлер плюс министры. Её kontrolliert die Opposition."
+ },
+ {
+  "k": "bundesverfassungsgericht",
+  "w": "das Bundesverfassungsgericht",
+  "ru": "Федеральный конституционный суд",
+  "bau": "Bund + Verfassung + Gericht",
+  "merk": "Сидит в Карлсруэ, толкует Grundgesetz и может запретить партию. Три слова в одном — типичная немецкая сборка."
+ },
+ {
+  "k": "bundeskanzleramt",
+  "w": "das Bundeskanzleramt",
+  "ru": "ведомство федерального канцлера",
+  "bau": "Bundeskanzler + Amt (ведомство)",
+  "merk": "Находится в Берлине — потому канцлер чаще всего именно там."
+ },
+ {
+  "k": "bundestagswahl",
+  "w": "die Bundestagswahl",
+  "ru": "выборы в Бундестаг",
+  "bau": "Bundestag + Wahl",
+  "merk": "Проходят alle vier Jahre — раз в четыре года."
+ },
+ {
+  "k": "minister",
+  "w": "die Ministerin / der Minister",
+  "ru": "министр",
+  "bau": "латинское minister — слуга",
+  "merk": "Ernannt wird er vom Bundespräsidenten по предложению канцлера. У земель нет только Außenminister."
+ },
+ {
+  "k": "ministerium",
+  "w": "das Ministerium",
+  "ru": "министерство",
+  "bau": "Minister + -ium",
+  "merk": "Ministerien относятся к Exekutive. Das Ministerium für Staatssicherheit — полное имя Stasi."
+ },
+ {
+  "k": "premierminister",
+  "w": "die Premierministerin / der Premierminister",
+  "ru": "премьер-министр",
+  "bau": "французское premier — первый",
+  "merk": "В Германии такого титула нет: у земель Ministerpräsident. Постоянный неверный вариант каталога."
+ },
+ {
+  "k": "senator",
+  "w": "die Senatorin / der Senator",
+  "ru": "сенатор — министр в городе-земле",
+  "bau": "латинское senatus — совет старейшин",
+  "merk": "Только в Берлине, Гамбурге и Бремене: там правительство зовётся Senat, а министры — Senatoren."
+ },
+ {
+  "k": "präsident",
+  "w": "die Präsidentin / der Präsident",
+  "ru": "президент, председатель",
+  "bau": "интернациональное",
+  "merk": "Не только глава государства: Bundestagspräsident — председатель парламента, Präsident des Senates — глава Бремена."
+ },
+ {
+  "k": "parlament",
+  "w": "das Parlament",
+  "ru": "парламент",
+  "bau": "французское parler — говорить",
+  "merk": "«Место, где говорят». Общегерманский — Bundestag, земельный — Landtag."
+ },
+ {
+  "k": "republik",
+  "w": "die Republik",
+  "ru": "республика",
+  "bau": "латинское res publica — общее дело",
+  "merk": "Staatsform Германии: главу государства выбирают, не наследуют. Противоположность — Monarchie."
+ },
+ {
+  "k": "union",
+  "w": "die Union",
+  "ru": "союз",
+  "bau": "интернациональное",
+  "merk": "Christlich Demokratische Union (CDU), Christlich Soziale Union (CSU), Europäische Union (EU) — везде «союз»."
+ },
+ {
+  "k": "bündnis",
+  "w": "das Bündnis",
+  "ru": "союз, альянс",
+  "bau": "от binden — связывать",
+  "merk": "Bund, Bündnis, verbinden — один корень. Bündnis 90/Die Grünen — партия зелёных."
+ },
+ {
+  "k": "gericht",
+  "w": "das Gericht",
+  "ru": "суд",
+  "bau": "от richten — судить, направлять",
+  "merk": "richten — судить, Richter — судья, Gericht — суд. Осторожно: Gericht в меню — «блюдо»."
+ },
+ {
+  "k": "richter",
+  "w": "die Richterin / der Richter",
+  "ru": "судья",
+  "bau": "от richten — судить",
+  "merk": "Arbeitet an einem Gericht und spricht Urteile. Относится к Judikative, не к Exekutive."
+ },
+ {
+  "k": "polizei",
+  "w": "die Polizei",
+  "ru": "полиция",
+  "bau": "интернациональное",
+  "merk": "Её задача — die Einhaltung von Gesetzen überwachen. Наказывает не она, а суд."
+ },
+ {
+  "k": "finanzamt",
+  "w": "das Finanzamt",
+  "ru": "налоговая инспекция",
+  "bau": "Finanzen + Amt",
+  "merk": "Относится к Exekutive. Против её решения подают Einspruch, а не Widerspruch."
+ },
+ {
+  "k": "wahlrecht",
+  "w": "das Wahlrecht",
+  "ru": "избирательное право",
+  "bau": "Wahl + Recht",
+  "merk": "Aktives — голосовать, passives — быть избранным. С 18 лет для Bundestagswahl."
+ },
+ {
+  "k": "wahlfreiheit",
+  "w": "die Wahlfreiheit",
+  "ru": "свобода выбора",
+  "bau": "Wahl (выбор) + Freiheit",
+  "merk": "Wahl — и «выборы», и «выбор». Свободы выбирать все школьные предметы у ребёнка нет."
+ },
+ {
+  "k": "schulgeld",
+  "w": "das Schulgeld",
+  "ru": "плата за школу",
+  "bau": "Schule + Geld (деньги)",
+  "merk": "Государственные школы в Германии бесплатны, поэтому Anspruch auf Schulgeld — неверный вариант."
+ },
+ {
+  "k": "freizeit",
+  "w": "die Freizeit",
+  "ru": "свободное время, досуг",
+  "bau": "frei + Zeit (время)",
+  "merk": "Freizeitpark — парк аттракционов. Права на unbegrenzte Freizeit у школьника, конечно, нет."
+ },
+ {
+  "k": "unbegrenzt",
+  "w": "unbegrenzt",
+  "ru": "неограниченный",
+  "bau": "un- (не) + begrenzt (ограниченный, от Grenze — граница)",
+  "merk": "Grenze — граница, begrenzen — ограничивать, unbegrenzt — без границ."
+ },
+ {
+  "k": "fach",
+  "w": "das Fach",
+  "ru": "предмет (школьный); отделение, ящик",
+  "bau": "—",
+  "merk": "Fächer — школьные предметы. Fachmann — специалист, «человек предмета»."
+ },
+ {
+  "k": "schule",
+  "w": "die Schule",
+  "ru": "школа",
+  "bau": "—",
+  "merk": "Schulpflicht — обязанность учиться, Schulpolitik — компетенция земель, Schulwesen — вся система."
+ },
+ {
+  "k": "kindergeld",
+  "w": "das Kindergeld",
+  "ru": "детское пособие",
+  "bau": "Kind + Geld",
+  "merk": "Не путать с Elterngeld: Kindergeld платят на ребёнка ежемесячно, Elterngeld — родителю после родов."
+ },
+ {
+  "k": "kirche",
+  "w": "die Kirche",
+  "ru": "церковь",
+  "bau": "—",
+  "merk": "Staat und Kirche getrennt — разделены. Kirchensteuer удерживают вместе с подоходным."
+ },
+ {
+  "k": "religion",
+  "w": "die Religion",
+  "ru": "религия",
+  "bau": "интернациональное",
+  "merk": "Religionsfreiheit — свобода вероисповедания, Religionsunterricht — урок религии в школе."
+ },
+ {
+  "k": "jude",
+  "w": "die Jüdin / der Jude",
+  "ru": "еврей",
+  "bau": "—",
+  "merk": "Прилагательное jüdisch — еврейский: jüdische Gemeinde, jüdisches Gebetshaus (Synagoge)."
+ },
+ {
+  "k": "jüdisch",
+  "w": "jüdisch",
+  "ru": "еврейский",
+  "bau": "от Jude",
+  "merk": "Крупнейшие jüdische Gemeinden — в Берлине и Мюнхене."
+ },
+ {
+  "k": "demonstration",
+  "w": "die Demonstration",
+  "ru": "демонстрация",
+  "bau": "интернациональное",
+  "merk": "Её надо anmelden — заявить властям, но разрешение не требуется. Montagsdemonstrationen 1989 года свалили ГДР."
+ },
+ {
+  "k": "demonstrier",
+  "w": "demonstrieren",
+  "ru": "выходить на демонстрацию",
+  "bau": "интернациональное",
+  "merk": "Das Recht zu demonstrieren — часть Versammlungsfreiheit, свободы собраний."
+ },
+ {
+  "k": "meinung",
+  "w": "die Meinung",
+  "ru": "мнение",
+  "bau": "от meinen — считать, полагать",
+  "merk": "Was meinst du? — как считаешь? Meinungsfreiheit — свобода мнения, seine Meinung äußern — высказать его."
+ },
+ {
+  "k": "beruf",
+  "w": "der Beruf",
+  "ru": "профессия",
+  "bau": "от rufen (звать) — «призвание»",
+  "merk": "Berufsfreiheit — свобода выбора профессии, гарантирована Grundgesetz. Berufsschule — профучилище."
+ },
+ {
+  "k": "firma",
+  "w": "die Firma",
+  "ru": "фирма, предприятие",
+  "bau": "интернациональное",
+  "merk": "Bei einer Firma oder Behörde beschäftigt — так работает большинство."
+ },
+ {
+  "k": "stelle",
+  "w": "die Stelle",
+  "ru": "место работы; место, точка",
+  "bau": "от stellen — ставить",
+  "merk": "Sich auf eine Stelle bewerben — подавать на вакансию. Lehrstelle — место ученичества."
+ },
+ {
+  "k": "politik",
+  "w": "die Politik",
+  "ru": "политика",
+  "bau": "интернациональное",
+  "merk": "Прилагательное politisch — политический: politische Bildung, politische Themen."
+ },
+ {
+  "k": "flagge",
+  "w": "die Flagge",
+  "ru": "флаг",
+  "bau": "—",
+  "merk": "Die deutsche Flagge — schwarz-rot-gold. У каждой земли своя Landesflagge, цвета обычно из герба."
+ },
+ {
+  "k": "farbe",
+  "w": "die Farbe",
+  "ru": "цвет",
+  "bau": "—",
+  "merk": "Welche Farben hat die Landesflagge — самый частый вопрос земельной части."
+ },
+ {
+  "k": "familie",
+  "w": "die Familie",
+  "ru": "семья",
+  "bau": "интернациональное",
+  "merk": "Schutz der Familie — основное право по Grundgesetz."
+ },
+ {
+  "k": "tochter",
+  "w": "die Tochter",
+  "ru": "дочь",
+  "bau": "—",
+  "merk": "Родственно английскому daughter. Sohn — сын, Kind — ребёнок."
+ },
+ {
+  "k": "jugendlich",
+  "w": "die Jugendlichen",
+  "ru": "подростки, молодёжь",
+  "bau": "от Jugend (молодость)",
+  "merk": "Ab 14 Jahren strafmündig — с 14 подростки отвечают по закону."
+ },
+ {
+  "k": "person",
+  "w": "die Person",
+  "ru": "человек, лицо",
+  "bau": "интернациональное",
+  "merk": "Personen — люди в юридическом смысле. Falsche Behauptungen über Personen — ложь о конкретных людях."
+ },
+ {
+  "k": "mensch",
+  "w": "der Mensch",
+  "ru": "человек",
+  "bau": "—",
+  "merk": "Menschenwürde — достоинство человека, Menschenrechte — права человека."
+ },
+ {
+  "k": "million",
+  "w": "die Million",
+  "ru": "миллион",
+  "bau": "интернациональное",
+  "merk": "84 Millionen Einwohner — население Германии."
+ },
+ {
+  "k": "buslinie",
+  "w": "die Buslinie",
+  "ru": "автобусный маршрут",
+  "bau": "Bus + Linie (линия)",
+  "merk": "Пример из каталога: чтобы её сохранить, основывают Bürgerinitiative."
+ },
+ {
+  "k": "fernseher",
+  "w": "der Fernseher",
+  "ru": "телевизор",
+  "bau": "fern (далеко) + sehen (видеть)",
+  "merk": "«Далековидец» — буквальный перевод. Сломанный — reklamieren, предъявить рекламацию."
+ },
+ {
+  "k": "verheiratet",
+  "w": "verheiratet",
+  "ru": "женат, замужем",
+  "bau": "от heiraten — жениться",
+  "merk": "Heirat — брак, Ehe — супружество. Одновременно только с одним человеком."
+ },
+ {
+  "k": "kreis",
+  "w": "der Kreis",
+  "ru": "округ, район; круг",
+  "bau": "—",
+  "merk": "Landkreis — район земли, Wahlkreis — избирательный округ. Везде «очерченный круг»."
+ },
+ {
+  "k": "wahlkreis",
+  "w": "der Wahlkreis",
+  "ru": "избирательный округ",
+  "bau": "Wahl + Kreis",
+  "merk": "В нём Erststimme выбирает конкретного депутата."
+ },
+ {
+  "k": "verwaltungsaufbau",
+  "w": "der Verwaltungsaufbau",
+  "ru": "устройство управления",
+  "bau": "Verwaltung + Aufbau (строение)",
+  "merk": "Dreistufig — трёхступенчатый: Bund, Länder, Gemeinden."
+ },
+ {
+  "k": "staatsform",
+  "w": "die Staatsform",
+  "ru": "форма правления",
+  "bau": "Staat + Form",
+  "merk": "У Германии — Republik, а не Monarchie."
+ },
+ {
+  "k": "merkmal",
+  "w": "das Merkmal",
+  "ru": "признак, черта",
+  "bau": "от merken — замечать",
+  "merk": "sich merken — запоминать. Merkmale der Demokratie: свободные выборы, оппозиция, много партий."
+ },
+ {
+  "k": "begriff",
+  "w": "der Begriff",
+  "ru": "понятие, термин",
+  "bau": "от begreifen — понимать, схватывать",
+  "merk": "greifen — хватать; Begriff — «схваченное умом». Was bedeutet der Begriff …?"
+ },
+ {
+  "k": "grundsatz",
+  "w": "der Grundsatz",
+  "ru": "принцип",
+  "bau": "Grund (основа) + Satz (положение)",
+  "merk": "Grundsatz der Gleichbehandlung — принцип равного обращения."
+ },
+ {
+  "k": "maßnahme",
+  "w": "die Maßnahme",
+  "ru": "мера, мероприятие",
+  "bau": "Maß (мера) + nehmen (брать)",
+  "merk": "«Взять меру». Welche Maßnahme schafft soziale Sicherheit — какая мера даёт социальную защиту."
+ },
+ {
+  "k": "sicherheit",
+  "w": "die Sicherheit",
+  "ru": "безопасность, надёжность",
+  "bau": "от sicher — надёжный",
+  "merk": "Soziale Sicherheit — социальная защищённость. Staatssicherheit — та самая Stasi."
+ },
+ {
+  "k": "zusammenarbeit",
+  "w": "die Zusammenarbeit",
+  "ru": "сотрудничество",
+  "bau": "zusammen (вместе) + Arbeit",
+  "merk": "Zusammenarbeit von Parteien = Koalition."
+ },
+ {
+  "k": "auswirkung",
+  "w": "die Auswirkung",
+  "ru": "последствие, влияние",
+  "bau": "aus + wirken (действовать)",
+  "merk": "wirken — действовать, Wirkung — действие, эффект. Смена правительства земли имеет Auswirkungen на Бундесрат."
+ },
+ {
+  "k": "gebrauch",
+  "w": "der Gebrauch",
+  "ru": "употребление, использование",
+  "bau": "от brauchen — нуждаться, употреблять",
+  "merk": "Не путать с Brauch — обычай: у них разные артикли и смыслы, но общий корень."
+ },
+ {
+  "k": "volk",
+  "w": "das Volk",
+  "ru": "народ",
+  "bau": "—",
+  "merk": "Alle Staatsgewalt geht vom Volke aus. Volkssouveränität, Volksaufstand, Volkshochschule — везде «народ»."
+ },
+ {
+  "k": "land",
+  "w": "das Land",
+  "ru": "земля; страна",
+  "bau": "—",
+  "merk": "Bundesland — федеральная земля, Nachbarland — соседняя страна. Множественное — die Länder."
+ },
+ {
+  "k": "staat",
+  "w": "der Staat",
+  "ru": "государство",
+  "bau": "—",
+  "merk": "Rechtsstaat, Bundesstaat, Stadtstaat, Staatsgewalt — корень Staat держит половину теста."
+ },
+ {
+  "k": "stadtstaat",
+  "w": "der Stadtstaat",
+  "ru": "город-земля",
+  "bau": "Stadt (город) + Staat",
+  "merk": "Их три: Берлин, Гамбург, Бремен — одновременно город и федеральная земля."
+ },
+ {
+  "k": "recht",
+  "w": "das Recht",
+  "ru": "право; правота",
+  "bau": "—",
+  "merk": "Grundrecht, Wahlrecht, Rechtsstaat. Пара к Pflicht (обязанность): голосовать — Recht, а не Pflicht."
+ },
+ {
+  "k": "wahl",
+  "w": "die Wahl",
+  "ru": "выборы; выбор",
+  "bau": "от wählen — выбирать",
+  "merk": "wählen — и «выбирать», и «звонить по номеру». Bundestagswahl, Landtagswahl, Europawahl."
+ },
+ {
+  "k": "jahr",
+  "w": "das Jahr",
+  "ru": "год",
+  "bau": "—",
+  "merk": "Für vier Jahre gewählt — избран на четыре года. Jahrzehnt — десятилетие, Jubiläum — юбилей."
+ },
+ {
+  "k": "alter",
+  "w": "das Alter",
+  "ru": "возраст",
+  "bau": "от alt — старый",
+  "merk": "Ab welchem Alter — с какого возраста. Volljährig с 18, kommunal часто с 16."
+ },
+ {
+  "k": "thema",
+  "w": "das Thema",
+  "ru": "тема",
+  "bau": "интернациональное",
+  "merk": "Множественное неправильное: die Themen. Über politische Themen informieren."
+ },
+ {
+  "k": "mitglied",
+  "w": "das Mitglied",
+  "ru": "член (организации)",
+  "bau": "mit (с) + Glied (звено)",
+  "merk": "Mitgliedstaat — государство-член, Vereinsmitglied — член общества."
+ },
+ {
+  "k": "schwarz",
+  "w": "schwarz",
+  "ru": "чёрный",
+  "bau": "—",
+  "merk": "Флаг Германии — schwarz-rot-gold. Цвета в тесте: rot (красный), gold/gelb (золотой/жёлтый), weiß (белый), blau (синий), grün (зелёный)."
+ },
+ {
+  "k": "einigkeit",
+  "w": "die Einigkeit",
+  "ru": "единство, согласие",
+  "bau": "от einig — единый",
+  "merk": "Первая строка гимна: Einigkeit und Recht und Freiheit — единство, право и свобода. Три слова, три понятия теста."
  }
 ]
