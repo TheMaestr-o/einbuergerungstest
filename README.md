@@ -18,22 +18,15 @@
 
 <br>
 
-<img src="screenshots/cover.png" width="760" alt="Prüfungsbogen: Frage 15 mit vier Kästchen, die richtige Antwort grün markiert">
+<img src="screenshots/cover.png" width="100%" alt="Prüfungsbogen: Frage 15 mit vier Kästchen, die richtige Antwort grün markiert">
 
 <br><br>
 
-<table>
-<tr>
-<td align="center"><img src="screenshots/screen-1.png" width="250" alt="Startseite mit Prüfung, Fehlerspeicher und Themen"></td>
-<td align="center"><img src="screenshots/screen-2.png" width="250" alt="Bildfrage nach dem Bundeswappen mit vier Wappen zur Auswahl"></td>
-<td align="center"><img src="screenshots/screen-3.png" width="250" alt="Ergebnisbildschirm mit Stempel bestanden und Fehlerliste"></td>
-</tr>
-<tr>
-<td align="center"><sub>Start · Prüfung, Fehler, Themen</sub></td>
-<td align="center"><sub>Bildfragen mit den Wappen des Katalogs</sub></td>
-<td align="center"><sub>Ergebnis · jeder Fehler mit richtiger Antwort</sub></td>
-</tr>
-</table>
+<img src="screenshots/screen-1.png" width="32%" alt="Startseite mit Prüfung, Fehlerspeicher und Themen">
+<img src="screenshots/screen-2.png" width="32%" alt="Bildfrage nach dem Bundeswappen mit vier Wappen zur Auswahl">
+<img src="screenshots/screen-3.png" width="32%" alt="Ergebnisbildschirm mit Stempel bestanden und Fehlerliste">
+
+<sub>Start · Prüfung, Fehler, Themen&nbsp;&nbsp;·&nbsp;&nbsp;Bildfragen mit den Wappen des Katalogs&nbsp;&nbsp;·&nbsp;&nbsp;Ergebnis · jeder Fehler mit richtiger Antwort</sub>
 
 <br>
 
@@ -59,7 +52,7 @@ Enthalten sind alle **300 bundesweiten** und **160 landesspezifischen** Fragen d
 
 ## Funktionen
 
-| | |
+| Funktion | Was sie tut |
 |---|---|
 | **Prüfung** | 33 Fragen wie im Ernstfall: 30 bundesweite plus 3 aus dem gewählten Bundesland, 60 Minuten, keine Auflösung vor der Abgabe. Bestanden ab 17 |
 | **Training** | Zehn Themen oder die zehn Fragen des eigenen Landes, jede Antwort löst sich sofort auf |
@@ -104,7 +97,7 @@ python3 build/fetch_fonts.py     # einmalig: Schriften als data:-URIs, damit die
 python3 build/build_html.py      # data/ + build/app.template.html  ->  index.html
 ```
 
-| | |
+| Datei | Inhalt |
 |---|---|
 | `index.html` | der fertige Trainer, alles eingebettet |
 | `data/questions.json` | 460 Fragen mit Lösung, Thema und Bildern |
