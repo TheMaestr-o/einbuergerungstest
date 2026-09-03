@@ -85,6 +85,8 @@ The machine-written "explanations" that ship with the second dataset were not us
 
 Behind the one-liners sit **eleven background essays in Russian**, one per storyline the catalogue keeps circling: the Basic Law, who elects whom, how the two votes work, 1933–1945, the Shoah and the responsibility towards Israel, the occupation zones, the GDR and the Wall, the European Union, the welfare system, courts and lay judges, everyday life and equal treatment. **275 of the 300 nationwide questions link to the essay they belong to** — read one storyline and dozens of questions answer themselves. They are also browsable on their own, like a small textbook.
 
+On top of that sit **166 vocabulary cards** for the B1-and-above words the catalogue actually uses. Under a question, the hard words appear as small chips; tapping one opens what the word is built from and how to remember it — *bedingungslos* = **Bedingung** (condition) + **-los** (without), the same tail as *arbeitslos* and *kostenlos*. 412 of the 460 questions carry at least one card. In exam mode the cards stay hidden.
+
 By default the app is **German only** — the Russian layer is off, leaves no trace in the interface, and its text is not readable in the page source either. It exists for one reader, not for visitors.
 
 <br>

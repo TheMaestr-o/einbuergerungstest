@@ -134,6 +134,22 @@ select{
   padding-top:4px;min-width:44px;letter-spacing:.02em
 }
 .qtext{margin:0;font-size:20.5px;line-height:1.38;text-wrap:balance;max-width:60ch}
+.vok{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0}
+.vok button{
+  font-family:Archivo,sans-serif;font-size:12.5px;font-weight:600;cursor:pointer;
+  background:transparent;border:0;border-bottom:1.5px dotted var(--mark);color:var(--ink-2);
+  padding:2px 1px;border-radius:0
+}
+.vok button:hover,.vok button[aria-expanded="true"]{color:var(--ink);border-bottom-style:solid}
+.vokcard{
+  margin:10px 0 0;padding:12px 14px;border:1px solid var(--rule-soft);border-left:3px solid var(--mark);
+  border-radius:2px;background:var(--sheet);max-width:64ch
+}
+.vokcard .w{font-family:Archivo,sans-serif;font-weight:700;font-size:16px;color:var(--ink)}
+.vokcard .ru{font-size:15.5px;color:var(--ink-2);margin-top:2px}
+.vokcard .row{margin-top:8px;font-size:14.5px;color:var(--ink-2);line-height:1.45}
+.vokcard .lb{font-family:Archivo,sans-serif;font-size:10px;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-3);display:block}
 .qcredit{margin:8px 0 0;font-size:11.5px;color:var(--ink-3);font-family:Archivo,sans-serif}
 .why{
   margin:0 20px 18px;padding:12px 14px;border-left:3px solid var(--mark);
@@ -477,7 +493,9 @@ details.legal > summary:hover{color:var(--ink)}
         <div class="qnum" id="qNum"></div>
         <div style="flex:1;min-width:0">
           <p class="qtext" id="qText"></p>
-            <div class="qpic" id="qPic" hidden></div>
+            <div class="vok" id="qVok" hidden></div>
+          <div class="vokcard" id="qVokCard" hidden></div>
+          <div class="qpic" id="qPic" hidden></div>
           <p class="qcredit" id="qCredit" hidden></p>
         </div>
       </div>
@@ -531,7 +549,8 @@ details.legal > summary:hover{color:var(--ink)}
 const QUESTIONS = __DATA__;
 const IMAGES = __IMAGES__;
 // die wenigen Oberflächenwörter der Zusatzebene, ebenfalls kodiert
-const L = {why:'0J/QvtGH0LXQvNGDINGC0LDQug==', more:'0KDQsNC30LHQvtGA', head:'0KDQsNC30LHQvtGA0Ysg0YLQtdC8', sub:'0L/Qvi3RgNGD0YHRgdC60LgsINGBINC40YHRgtC+0YDQuNC10Lk='};
+const L = {why:'0J/QvtGH0LXQvNGDINGC0LDQug==', more:'0KDQsNC30LHQvtGA', head:'0KDQsNC30LHQvtGA0Ysg0YLQtdC8', sub:'0L/Qvi3RgNGD0YHRgdC60LgsINGBINC40YHRgtC+0YDQuNC10Lk=', bau:'0LjQtyDRh9C10LPQviDRgdC70L7QstC+', merk:'0LrQsNC6INC30LDQv9C+0LzQvdC40YLRjA=='};
+const VOK = __VOK__;
 const dec = s => new TextDecoder().decode(Uint8Array.from(atob(s), c => c.charCodeAt(0)));
 const BRIEFS = __BRIEFS__.map(b => ({id:b.id, title:dec(b.title), text:dec(b.text)}));
 const BRIEF = Object.fromEntries(BRIEFS.map(b => [b.id, b]));
@@ -643,6 +662,28 @@ function render(){
   $('#qText').textContent = q.question;
 
   $('#qCredit').hidden = !q.credit; if(q.credit) $('#qCredit').textContent = q.credit;
+
+  // Wortkarten: beim Üben sichtbar, in der Prüfung nicht
+  const vok = $('#qVok'), card = $('#qVokCard');
+  const words = (S.ru && immediate && q.vok) ? q.vok.slice(0, 6) : [];
+  vok.hidden = !words.length; card.hidden = true; vok.innerHTML = '';
+  words.forEach(i => {
+    const v = VOK[i], btn = document.createElement('button');
+    btn.type = 'button'; btn.textContent = v.w.replace(/^(der|die|das) /, '');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.onclick = () => {
+      const open = card.dataset.i === String(i) && !card.hidden;
+      vok.querySelectorAll('button').forEach(b => b.setAttribute('aria-expanded','false'));
+      if(open){ card.hidden = true; return; }
+      btn.setAttribute('aria-expanded','true');
+      card.dataset.i = i; card.hidden = false;
+      card.innerHTML = '<div class="w">' + esc(v.w) + '</div>'
+        + '<div class="ru">' + esc(dec(v.ru)) + '</div>'
+        + (v.bau ? '<div class="row"><span class="lb">' + dec(L.bau) + '</span>' + esc(dec(v.bau)) + '</div>' : '')
+        + '<div class="row"><span class="lb">' + dec(L.merk) + '</span>' + esc(dec(v.merk)) + '</div>';
+    };
+    vok.appendChild(btn);
+  });
 
   const pic = $('#qPic');
   pic.hidden = !(q.images.length===1);

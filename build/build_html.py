@@ -16,6 +16,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 TPL = ROOT / 'build' / 'app.template.html'
 DATA = ROOT / 'data' / 'questions.json'
 BRIEFS = ROOT / 'data' / 'briefings.json'
+VOCAB = ROOT / 'data' / 'vocab.json'
 IMGDIR = ROOT / 'data' / 'images'
 FONTS = ROOT / 'build' / 'fonts.inline.css'
 OUT = ROOT / 'index.html'
@@ -59,6 +60,14 @@ for q in slim:
 briefs = [{'id': b['id'], 'title': hide(b['title']), 'text': hide(b['text'])}
           for b in json.loads(BRIEFS.read_text(encoding='utf-8'))]
 
+# Wortkarten: welche Karte steckt in welcher Frage
+vocab = json.loads(VOCAB.read_text(encoding='utf-8'))
+for q, src in zip(slim, questions):
+    hay = (src['question'] + ' ' + ' '.join(src['answers'])).lower()
+    q['vok'] = [i for i, v in enumerate(vocab) if v['k'] in hay] or None
+vok = [{'w': v['w'], 'ru': hide(v['ru']), 'bau': hide(v.get('bau')), 'merk': hide(v['merk'])}
+       for v in vocab]
+
 
 
 html = TPL.read_text(encoding='utf-8')
@@ -70,6 +79,7 @@ if FONTS.exists():
                   '<style>\n' + FONTS.read_text(encoding='utf-8') + '</style>', html)
 html = html.replace('__DATA__', json.dumps(slim, ensure_ascii=False, separators=(',', ':')))
 html = html.replace('__IMAGES__', json.dumps(images, separators=(',', ':')))
+html = html.replace('__VOK__', json.dumps(vok, ensure_ascii=False, separators=(',', ':')))
 html = html.replace('__BRIEFS__', json.dumps(briefs, ensure_ascii=False, separators=(',', ':')))
 # eigenständige Datei: vollständiges Dokument mit Zeichensatz-Angabe,
 # sonst liest der Browser die UTF-8-Umlaute beim Öffnen von der Platte als Latin-1
@@ -82,3 +92,4 @@ print(f'{OUT.relative_to(ROOT)}: {OUT.stat().st_size/1e6:.2f} MB')
 print(f'  {len(slim)} Fragen, {len(images)} Bilder eingebettet')
 print(f'  {sum(1 for q in slim if q["why"])} Fragen mit Erklärung, '
       f'{sum(1 for q in slim if q["brief"])} mit Hintergrundtext ({len(briefs)} Texte)')
+print(f'  {sum(1 for q in slim if q["vok"])} Fragen mit Wortkarten ({len(vok)} Karten)')

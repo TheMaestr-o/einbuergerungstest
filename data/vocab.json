@@ -1,0 +1,1164 @@
+[
+ {
+  "k": "grundgesetz",
+  "w": "das Grundgesetz",
+  "ru": "основной закон, конституция ФРГ",
+  "bau": "Grund (основа, фундамент) + Gesetz (закон)",
+  "merk": "Grund — то же, что в «Grund­stück» (земельный участок) — основа. Немцы не сказали Verfassung, чтобы подчеркнуть: это фундамент, положенный временно."
+ },
+ {
+  "k": "verfassung",
+  "w": "die Verfassung",
+  "ru": "конституция",
+  "bau": "от verfassen — составлять, сочинять",
+  "merk": "verfassen — «составить текст». Конституция буквально «составленное». Отсюда verfassungswidrig — противоречащий конституции."
+ },
+ {
+  "k": "grundrecht",
+  "w": "das Grundrecht",
+  "ru": "основное право",
+  "bau": "Grund (основа) + Recht (право)",
+  "merk": "Права-фундамент: их нельзя отменить голосованием, на них стоит всё здание."
+ },
+ {
+  "k": "menschenwürde",
+  "w": "die Menschenwürde",
+  "ru": "человеческое достоинство",
+  "bau": "Mensch (человек) + Würde (достоинство)",
+  "merk": "Würde родственно würdig — «достойный». Статья 1: unantastbar — неприкосновенно, буквально «нельзя тронуть» (an-tasten — прикасаться)."
+ },
+ {
+  "k": "unantastbar",
+  "w": "unantastbar",
+  "ru": "неприкосновенный",
+  "bau": "un- (не) + an-tasten (трогать) + -bar (можно)",
+  "merk": "tasten — щупать, как Tastatur (клавиатура — то, что щупают пальцами). Un-antast-bar = «нельзя пощупать»."
+ },
+ {
+  "k": "meinungsfreiheit",
+  "w": "die Meinungsfreiheit",
+  "ru": "свобода мнения",
+  "bau": "Meinung (мнение) + Freiheit (свобода)",
+  "merk": "meinen — считать, полагать («Was meinst du?» — как считаешь?). Отсюда Meinung — то, что ты считаешь."
+ },
+ {
+  "k": "pressefreiheit",
+  "w": "die Pressefreiheit",
+  "ru": "свобода прессы",
+  "bau": "Presse + Freiheit",
+  "merk": "Тот же корень Freiheit во всех свободах: Religionsfreiheit, Versammlungsfreiheit. Запомни один хвост — получишь десяток слов."
+ },
+ {
+  "k": "freizügigkeit",
+  "w": "die Freizügigkeit",
+  "ru": "свобода передвижения и выбора места жительства",
+  "bau": "frei (свободно) + ziehen (переезжать) + -keit",
+  "merk": "umziehen — переезжать. Frei-züg-igkeit = «свободно переезжать»: сам решаешь, где жить."
+ },
+ {
+  "k": "gewissensfreiheit",
+  "w": "die Gewissensfreiheit",
+  "ru": "свобода совести",
+  "bau": "Gewissen (совесть) + Freiheit",
+  "merk": "Gewissen похоже на wissen (знать) — «то, что знаешь внутри себя»."
+ },
+ {
+  "k": "rechtsstaat",
+  "w": "der Rechtsstaat",
+  "ru": "правовое государство",
+  "bau": "Recht (право) + Staat (государство)",
+  "merk": "Государство, где закон выше власти. Проверочная фраза каталога: der Staat muss die Gesetze einhalten."
+ },
+ {
+  "k": "einhalt",
+  "w": "einhalten",
+  "ru": "соблюдать (закон, срок)",
+  "bau": "ein + halten (держать)",
+  "merk": "Держать себя в рамках. Die Einhaltung von Gesetzen überwachen — следить за соблюдением законов (задача полиции)."
+ },
+ {
+  "k": "zwangsarbeit",
+  "w": "die Zwangsarbeit",
+  "ru": "принудительный труд",
+  "bau": "Zwang (принуждение) + Arbeit (работа)",
+  "merk": "zwingen — принуждать. Zwang слышно в «zwanzig»? Нет — не путай. Держись за глагол zwingen: «его zwingen работать»."
+ },
+ {
+  "k": "bedingungslos",
+  "w": "bedingungslos",
+  "ru": "безоговорочный, без всяких условий",
+  "bau": "Bedingung (условие) + -los (без)",
+  "merk": "Хвост -los всегда «без»: arbeitslos — без работы, kostenlos — без затрат, бесплатно. Значит bedingungslos — «без условий». Die bedingungslose Kapitulation 1945 — капитуляция без единого условия для побеждённого."
+ },
+ {
+  "k": "kapitulation",
+  "w": "die Kapitulation",
+  "ru": "капитуляция, сдача",
+  "bau": "интернациональное слово",
+  "merk": "Звучит как русская «капитуляция» — такие слова каталог дарит бесплатно, их учить не надо, надо только узнавать."
+ },
+ {
+  "k": "besatzungszone",
+  "w": "die Besatzungszone",
+  "ru": "зона оккупации",
+  "bau": "Besatzung (оккупация) + Zone",
+  "merk": "besetzen — занимать, оккупировать; Besatzung — занятая территория. В самолёте Besatzung — экипаж, тоже «те, кто занял места»."
+ },
+ {
+  "k": "luftbrücke",
+  "w": "die Luftbrücke",
+  "ru": "воздушный мост (снабжение Западного Берлина 1948–49)",
+  "bau": "Luft (воздух) + Brücke (мост)",
+  "merk": "Картинка прямо в слове: мост по воздуху, когда СССР перекрыл дороги."
+ },
+ {
+  "k": "mauer",
+  "w": "die Mauer",
+  "ru": "стена (каменная)",
+  "bau": "—",
+  "merk": "Не путай с Wand: Wand — стена внутри комнаты, Mauer — наружная, каменная. Берлинская — die Mauer."
+ },
+ {
+  "k": "wiedervereinigung",
+  "w": "die Wiedervereinigung",
+  "ru": "воссоединение",
+  "bau": "wieder (снова) + ver-einigen (объединять) + -ung",
+  "merk": "eins — один, vereinigen — «сделать одним», wieder — снова. Снова-с-делать-одним. Отсюда и Tag der Deutschen Einheit."
+ },
+ {
+  "k": "einheit",
+  "w": "die Einheit",
+  "ru": "единство",
+  "bau": "ein (один) + -heit",
+  "merk": "Хвост -heit делает из прилагательного существительное: frei → Freiheit, ein → Einheit."
+ },
+ {
+  "k": "beitritt",
+  "w": "der Beitritt",
+  "ru": "вступление, присоединение",
+  "bau": "bei (при) + treten (ступать)",
+  "merk": "beitreten — «вступить рядом». Пять восточных земель beigetreten — вступили в ФРГ, а не слились с ней."
+ },
+ {
+  "k": "volksaufstand",
+  "w": "der Volksaufstand",
+  "ru": "народное восстание",
+  "bau": "Volk (народ) + Aufstand (восстание: auf + stehen — встать)",
+  "merk": "Aufstand — буквально «вставание»: народ встал. 17 июня 1953 года."
+ },
+ {
+  "k": "planwirtschaft",
+  "w": "die Planwirtschaft",
+  "ru": "плановая экономика",
+  "bau": "Plan + Wirtschaft (хозяйство, экономика)",
+  "merk": "Противоположность — Marktwirtschaft, рыночная. Wirtschaft ещё и «трактир»: где хозяйствуют."
+ },
+ {
+  "k": "marktwirtschaft",
+  "w": "die soziale Marktwirtschaft",
+  "ru": "социальная рыночная экономика",
+  "bau": "Markt (рынок) + Wirtschaft",
+  "merk": "Формула теста: Angebot und Nachfrage (спрос и предложение) плюс sozialer Ausgleich (социальное выравнивание)."
+ },
+ {
+  "k": "angebot",
+  "w": "das Angebot",
+  "ru": "предложение (товара)",
+  "bau": "an + bieten (предлагать)",
+  "merk": "bieten — предлагать; Angebot в магазине — «акция, спецпредложение». Пара к Nachfrage."
+ },
+ {
+  "k": "nachfrage",
+  "w": "die Nachfrage",
+  "ru": "спрос",
+  "bau": "nach (после, вслед) + fragen (спрашивать)",
+  "merk": "Спрос — это когда «спрашивают вслед»: nachfragen — справляться, интересоваться."
+ },
+ {
+  "k": "sozialversicherung",
+  "w": "die Sozialversicherung",
+  "ru": "социальное страхование",
+  "bau": "sozial + Versicherung (страхование)",
+  "merk": "sicher — надёжный, безопасный; ver-sicher-ung — «обезопасивание». Пять частей: Kranken-, Renten-, Arbeitslosen-, Pflege- и Unfallversicherung."
+ },
+ {
+  "k": "sozialabgabe",
+  "w": "die Sozialabgaben",
+  "ru": "взносы на социальное страхование",
+  "bau": "sozial + ab-geben (отдавать)",
+  "merk": "abgeben — отдавать. То, что отдаёшь с зарплаты. Не Steuern (налоги) — это каталог различает."
+ },
+ {
+  "k": "krankenversicherung",
+  "w": "die Krankenversicherung",
+  "ru": "медицинское страхование",
+  "bau": "krank (больной) + Versicherung",
+  "merk": "Krankenhaus — больница, Krankenwagen — скорая. Корень krank везде про болезнь."
+ },
+ {
+  "k": "rentenversicherung",
+  "w": "die Rentenversicherung",
+  "ru": "пенсионное страхование",
+  "bau": "Rente (пенсия) + Versicherung",
+  "merk": "Rente — пенсия, Rentner — пенсионер."
+ },
+ {
+  "k": "pflegeversicherung",
+  "w": "die Pflegeversicherung",
+  "ru": "страхование по уходу",
+  "bau": "Pflege (уход) + Versicherung",
+  "merk": "pflegen — ухаживать, заботиться. Pflegeheim — дом престарелых."
+ },
+ {
+  "k": "arbeitslosenversicherung",
+  "w": "die Arbeitslosenversicherung",
+  "ru": "страхование по безработице",
+  "bau": "arbeitslos (безработный) + Versicherung",
+  "merk": "Опять хвост -los: arbeits-los — без работы."
+ },
+ {
+  "k": "arbeitgeber",
+  "w": "die Arbeitgeberin / der Arbeitgeber",
+  "ru": "работодатель",
+  "bau": "Arbeit (работа) + geben (давать)",
+  "merk": "Кто работу даёт — Arbeitgeber. Кто берёт — Arbeitnehmer. Пара, которую каталог спрашивает постоянно."
+ },
+ {
+  "k": "arbeitnehmer",
+  "w": "die Arbeitnehmerin / der Arbeitnehmer",
+  "ru": "наёмный работник",
+  "bau": "Arbeit + nehmen (брать)",
+  "merk": "Берёт работу — значит работник. Их интересы представляют Gewerkschaften."
+ },
+ {
+  "k": "gewerkschaft",
+  "w": "die Gewerkschaft",
+  "ru": "профсоюз",
+  "bau": "Gewerk (ремесло, цех) + -schaft",
+  "merk": "Хвост -schaft — «сообщество»: Freundschaft (дружба), Mannschaft (команда). Сообщество работников одного дела."
+ },
+ {
+  "k": "betriebsrat",
+  "w": "der Betriebsrat",
+  "ru": "совет предприятия",
+  "bau": "Betrieb (предприятие) + Rat (совет)",
+  "merk": "Rat — совет и как орган, и как рекомендация. Bundesrat, Betriebsrat, Stadtrat — везде «совет»."
+ },
+ {
+  "k": "kündigung",
+  "w": "die Kündigung",
+  "ru": "увольнение, расторжение договора",
+  "bau": "от kündigen — расторгать, объявлять",
+  "merk": "kündigen — «объявить», отсюда и «объявить об уходе». Kündigungsfrist — срок предупреждения, Kündigungsschutzklage — иск против незаконного увольнения."
+ },
+ {
+  "k": "arbeitsgericht",
+  "w": "das Arbeitsgericht",
+  "ru": "суд по трудовым спорам",
+  "bau": "Arbeit + Gericht (суд)",
+  "merk": "Gericht — и «суд», и «блюдо» в меню. В тесте всегда суд."
+ },
+ {
+  "k": "schöff",
+  "w": "die Schöffin / der Schöffe",
+  "ru": "народный заседатель в суде",
+  "bau": "старое слово, родственно «schaffen» (делать)",
+  "merk": "Обычный гражданин без юробразования, ehrenamtlich (на общественных началах), решает вместе с судьёй о вине и наказании."
+ },
+ {
+  "k": "ehrenamt",
+  "w": "das Ehrenamt",
+  "ru": "общественная работа без оплаты",
+  "bau": "Ehre (честь) + Amt (должность)",
+  "merk": "«Должность по чести», а не за деньги: freiwillig und unbezahlt — добровольно и без оплаты."
+ },
+ {
+  "k": "unbezahlt",
+  "w": "unbezahlt",
+  "ru": "неоплачиваемый",
+  "bau": "un- (не) + bezahlt (оплаченный)",
+  "merk": "Приставка un- переворачивает смысл: bekannt → unbekannt, möglich → unmöglich."
+ },
+ {
+  "k": "freiwillig",
+  "w": "freiwillig",
+  "ru": "добровольный",
+  "bau": "frei (свободно) + Wille (воля)",
+  "merk": "«По свободной воле». Wille — воля, willkommen — «желанный приход», добро пожаловать."
+ },
+ {
+  "k": "verein",
+  "w": "der Verein",
+  "ru": "общество, союз, клуб",
+  "bau": "от vereinen — объединять",
+  "merk": "Немецкая жизнь держится на Vereine: Sportverein, Gesangverein. Тот же корень, что в Wiedervereinigung."
+ },
+ {
+  "k": "abgeordnet",
+  "w": "die Abgeordnete / der Abgeordnete",
+  "ru": "депутат",
+  "bau": "ab (от) + ordnen (направлять, назначать)",
+  "merk": "Буквально «отряжённый»: тот, кого народ отправил в парламент."
+ },
+ {
+  "k": "fraktion",
+  "w": "die Fraktion",
+  "ru": "фракция — депутаты одной партии в парламенте",
+  "bau": "интернациональное",
+  "merk": "Как русская «фракция». Не путать с Partei: партия в стране, фракция — в парламенте."
+ },
+ {
+  "k": "opposition",
+  "w": "die Opposition",
+  "ru": "оппозиция",
+  "bau": "интернациональное",
+  "merk": "Определение каталога: alle Abgeordneten, die nicht zur Regierungspartei gehören — все, кто не в правящих партиях. Её работа — kontrollieren, контролировать правительство."
+ },
+ {
+  "k": "koalition",
+  "w": "die Koalition",
+  "ru": "коалиция",
+  "bau": "интернациональное",
+  "merk": "Совместная работа партий ради правительства. Ampelkoalition — «светофорная»: красные SPD, жёлтые FDP, зелёные Grüne."
+ },
+ {
+  "k": "bundesversammlung",
+  "w": "die Bundesversammlung",
+  "ru": "федеральное собрание (выбирает президента)",
+  "bau": "Bund + Versammlung (собрание)",
+  "merk": "versammeln — собирать. Собирается только ради выборов президента: депутаты Бундестага плюс делегаты земель."
+ },
+ {
+  "k": "staatsoberhaupt",
+  "w": "das Staatsoberhaupt",
+  "ru": "глава государства",
+  "bau": "Staat + Ober (верхний) + Haupt (голова)",
+  "merk": "«Верхняя голова государства» — президент. Haupt — устаревшее «голова», отсюда Hauptstadt — столица, «главный город»."
+ },
+ {
+  "k": "hauptstadt",
+  "w": "die Hauptstadt",
+  "ru": "столица",
+  "bau": "Haupt (главный) + Stadt (город)",
+  "merk": "Landeshauptstadt — столица земли. Ловушка: главный город земли не всегда самый большой."
+ },
+ {
+  "k": "regierungschef",
+  "w": "die Regierungschefin / der Regierungschef",
+  "ru": "глава правительства",
+  "bau": "Regierung (правительство) + Chef",
+  "merk": "regieren — править. В землях это Ministerpräsident, в городах-землях иначе."
+ },
+ {
+  "k": "ministerpräsident",
+  "w": "die Ministerpräsidentin / der Ministerpräsident",
+  "ru": "премьер-министр земли",
+  "bau": "Minister + Präsident",
+  "merk": "Глава правительства в тринадцати землях. Не путать с Bundeskanzler — тот во главе всей страны."
+ },
+ {
+  "k": "verwaltung",
+  "w": "die Verwaltung",
+  "ru": "управление, администрация",
+  "bau": "от verwalten — управлять",
+  "merk": "walten — распоряжаться. Gemeindeverwaltung — управа общины; dreistufiger Verwaltungsaufbau — трёхступенчатое устройство: Bund, Länder, Gemeinden."
+ },
+ {
+  "k": "behörde",
+  "w": "die Behörde",
+  "ru": "ведомство, госучреждение",
+  "bau": "—",
+  "merk": "Всё, куда ходят с бумагами: Ordnungsamt, Jugendamt, Finanzamt. Против её решения подают Widerspruch."
+ },
+ {
+  "k": "widerspruch",
+  "w": "der Widerspruch",
+  "ru": "возражение, протест против решения ведомства",
+  "bau": "wider (против) + Sprache/sprechen (говорить)",
+  "merk": "«Против-речие» — буквально то же, что русское «противоречие». Против налогового решения подают Einspruch."
+ },
+ {
+  "k": "einspruch",
+  "w": "der Einspruch",
+  "ru": "возражение (например, против налогового решения)",
+  "bau": "ein + sprechen",
+  "merk": "Пара к Widerspruch: Einspruch — в налоговой, Widerspruch — в других ведомствах."
+ },
+ {
+  "k": "stimmzettel",
+  "w": "der Stimmzettel",
+  "ru": "избирательный бюллетень",
+  "bau": "Stimme (голос) + Zettel (листок)",
+  "merk": "Stimme — и «голос» на выборах, и голос, которым говорят. Zettel — записка, листок."
+ },
+ {
+  "k": "erststimme",
+  "w": "die Erststimme",
+  "ru": "первый голос — за человека в округе",
+  "bau": "erst (первый) + Stimme",
+  "merk": "Слева в бюллетене, за конкретного кандидата."
+ },
+ {
+  "k": "zweitstimme",
+  "w": "die Zweitstimme",
+  "ru": "второй голос — за партийный список",
+  "bau": "zweit (второй) + Stimme",
+  "merk": "Справа. Именно он решает, сколько мест партия получит. Запомни: Zweitstimme = места."
+ },
+ {
+  "k": "wahlberechtigt",
+  "w": "wahlberechtigt",
+  "ru": "имеющий право голоса",
+  "bau": "Wahl (выборы) + berechtigt (имеющий право, от Recht)",
+  "merk": "Хвост -berechtigt везде «имеющий право»: aufenthaltsberechtigt — имеющий право на пребывание."
+ },
+ {
+  "k": "wahlbenachrichtigung",
+  "w": "die Wahlbenachrichtigung",
+  "ru": "уведомление о выборах от общины",
+  "bau": "Wahl + Benachrichtigung (извещение, от Nachricht — известие)",
+  "merk": "Nachricht — новость, известие. Приходит по почте перед выборами."
+ },
+ {
+  "k": "briefwahl",
+  "w": "die Briefwahl",
+  "ru": "голосование по почте",
+  "bau": "Brief (письмо) + Wahl",
+  "merk": "Голосуешь письмом, не приходя на участок."
+ },
+ {
+  "k": "wahlhelfer",
+  "w": "die Wahlhelferin / der Wahlhelfer",
+  "ru": "помощник на выборах, считает голоса",
+  "bau": "Wahl + Helfer (помощник, от helfen)",
+  "merk": "Гражданина ФРГ могут обязать этим заняться — единственный Ehrenamt из-под палки."
+ },
+ {
+  "k": "hürde",
+  "w": "die Hürde",
+  "ru": "барьер, препятствие",
+  "bau": "—",
+  "merk": "В лёгкой атлетике Hürdenlauf — бег с барьерами. 5 %-Hürde: партия ниже пяти процентов в парламент не проходит."
+ },
+ {
+  "k": "geheim",
+  "w": "geheim",
+  "ru": "тайный",
+  "bau": "от Heim (дом) — «домашний, скрытый»",
+  "merk": "Geheimnis — тайна, Geheimdienst — спецслужба (как Stasi). Выборы geheim: никто не узнает, как ты голосовал."
+ },
+ {
+  "k": "gewalt",
+  "w": "die Gewalt",
+  "ru": "власть; насилие",
+  "bau": "от walten — распоряжаться",
+  "merk": "Два значения. В тесте — власть: Staatsgewalt, Gewaltenteilung (разделение властей). Три ветви: Legislative, Exekutive, Judikative."
+ },
+ {
+  "k": "legislative",
+  "w": "die Legislative",
+  "ru": "законодательная власть",
+  "bau": "латинское lex — закон",
+  "merk": "Bundestag и Bundesrat. Родственно английскому legislation."
+ },
+ {
+  "k": "exekutive",
+  "w": "die Exekutive",
+  "ru": "исполнительная власть",
+  "bau": "латинское exsequi — исполнять",
+  "merk": "Правительство, министерства, полиция, ведомства. Суды сюда НЕ входят — ловушка каталога."
+ },
+ {
+  "k": "judikative",
+  "w": "die Judikative",
+  "ru": "судебная власть",
+  "bau": "латинское iudex — судья",
+  "merk": "Суды и судьи. Второе название — rechtsprechende Gewalt, «право-говорящая власть»."
+ },
+ {
+  "k": "urteil",
+  "w": "das Urteil",
+  "ru": "приговор, судебное решение",
+  "bau": "ur- (изначально) + teilen (делить, разделять)",
+  "merk": "Судья spricht Urteile — «говорит приговоры». Отсюда rechtsprechend."
+ },
+ {
+  "k": "straftat",
+  "w": "die Straftat",
+  "ru": "преступление",
+  "bau": "Strafe (наказание) + Tat (деяние)",
+  "merk": "tun — делать, Tat — дело, поступок. Деяние, за которым идёт наказание."
+ },
+ {
+  "k": "freiheitsstrafe",
+  "w": "die Freiheitsstrafe",
+  "ru": "лишение свободы",
+  "bau": "Freiheit + Strafe (наказание)",
+  "merk": "Наказание свободой, то есть её отъёмом. Пара к Geldstrafe — денежный штраф."
+ },
+ {
+  "k": "geldstrafe",
+  "w": "die Geldstrafe",
+  "ru": "денежный штраф",
+  "bau": "Geld (деньги) + Strafe",
+  "merk": "Единственное из наказаний в вопросе «что совместимо с Основным законом»: не пытки, не смертная казнь, а штраф."
+ },
+ {
+  "k": "todesstrafe",
+  "w": "die Todesstrafe",
+  "ru": "смертная казнь",
+  "bau": "Tod (смерть) + Strafe",
+  "merk": "В Германии запрещена Основным законом. Tod — смерть, tot — мёртвый."
+ },
+ {
+  "k": "leugn",
+  "w": "leugnen",
+  "ru": "отрицать",
+  "bau": "—",
+  "merk": "Holocaustleugnung — отрицание Холокоста, преступление до пяти лет. Слово редкое, но в тесте обязательное."
+ },
+ {
+  "k": "vernichtung",
+  "w": "die Vernichtung",
+  "ru": "уничтожение",
+  "bau": "ver- + nichts (ничто)",
+  "merk": "Буквально «сведение в ничто». Vernichtungslager — лагерь уничтожения."
+ },
+ {
+  "k": "verantwortung",
+  "w": "die Verantwortung",
+  "ru": "ответственность",
+  "bau": "от Antwort (ответ)",
+  "merk": "Отвечать за что-то — значит нести ответственность. Die besondere Verantwortung für Israel."
+ },
+ {
+  "k": "gedenktag",
+  "w": "der Gedenktag",
+  "ru": "день памяти",
+  "bau": "gedenken (помнить, чтить) + Tag",
+  "merk": "denken — думать, ge-denken — «продумывать назад», вспоминать. 27 января — день памяти жертв нацизма."
+ },
+ {
+  "k": "opfer",
+  "w": "das Opfer",
+  "ru": "жертва",
+  "bau": "—",
+  "merk": "И жертва преступления, и жертва как приношение. Die Opfer des Nationalsozialismus."
+ },
+ {
+  "k": "bundesland",
+  "w": "das Bundesland",
+  "ru": "федеральная земля",
+  "bau": "Bund (федерация) + Land (земля, страна)",
+  "merk": "Bund — союз, объединение; Bundesland — земля внутри союза. Их шестнадцать. Множественное — die Bundesländer."
+ },
+ {
+  "k": "bundesrepublik",
+  "w": "die Bundesrepublik",
+  "ru": "федеративная республика",
+  "bau": "Bund + Republik",
+  "merk": "Полное имя страны — Bundesrepublik Deutschland. Republik значит: главу государства выбирают, а не наследуют."
+ },
+ {
+  "k": "bundesstaat",
+  "w": "der Bundesstaat",
+  "ru": "федеративное государство",
+  "bau": "Bund + Staat",
+  "merk": "Формула Основного закона: ein demokratischer und sozialer Bundesstaat."
+ },
+ {
+  "k": "gemeinde",
+  "w": "die Gemeinde",
+  "ru": "община, муниципалитет",
+  "bau": "от gemein — общий",
+  "merk": "Нижняя ступень власти: Bund → Länder → Gemeinden. Её глава — Bürgermeister. Gemeinsam — совместно, тот же корень."
+ },
+ {
+  "k": "bürgermeister",
+  "w": "die Bürgermeisterin / der Bürgermeister",
+  "ru": "бургомистр, глава общины",
+  "bau": "Bürger (гражданин) + Meister (мастер, старший)",
+  "merk": "«Старший над горожанами». Bürger — от Burg (крепость): изначально житель города-крепости."
+ },
+ {
+  "k": "bürger",
+  "w": "die Bürgerin / der Bürger",
+  "ru": "гражданин, житель",
+  "bau": "от Burg (крепость, замок)",
+  "merk": "Bürgerinitiative — гражданская инициатива, Bürgeramt — гражданская управа."
+ },
+ {
+  "k": "ordnungsamt",
+  "w": "das Ordnungsamt",
+  "ru": "ведомство общественного порядка",
+  "bau": "Ordnung (порядок) + Amt (ведомство)",
+  "merk": "Ordnung muss sein — «порядок должен быть», немецкая поговорка. Amt — любое ведомство: Finanzamt, Jugendamt, Standesamt."
+ },
+ {
+  "k": "landtag",
+  "w": "der Landtag",
+  "ru": "парламент федеральной земли",
+  "bau": "Land + Tag (здесь — «собрание», старое значение)",
+  "merk": "Tag в старом смысле «съезд»: Bundestag, Landtag, Reichstag — везде собрание, а не день. Выборы в него — Landtagswahl."
+ },
+ {
+  "k": "landkreis",
+  "w": "der Landkreis",
+  "ru": "район (административная единица земли)",
+  "bau": "Land + Kreis (круг, округ)",
+  "merk": "Kreis — круг; окружность земли. Ловушка каталога: района подсовывают из чужой земли."
+ },
+ {
+  "k": "landesflagge",
+  "w": "die Landesflagge",
+  "ru": "флаг федеральной земли",
+  "bau": "Land + Flagge",
+  "merk": "Цвета флага почти всегда повторяют герб земли — так их и запоминают."
+ },
+ {
+  "k": "wappen",
+  "w": "das Wappen",
+  "ru": "герб",
+  "bau": "родственно Waffe (оружие) — герб на щите",
+  "merk": "Wappen и Waffe — одного корня: знак на боевом щите. Wappentier ФРГ — Adler (орёл)."
+ },
+ {
+  "k": "landeszentrale",
+  "w": "die Landeszentrale für politische Bildung",
+  "ru": "земельный центр политического образования",
+  "bau": "Land + Zentrale (центр) + Bildung (образование)",
+  "merk": "Даёт бесплатные брошюры и курсы. Есть в каждой земле, плюс федеральная Bundeszentrale."
+ },
+ {
+  "k": "bildung",
+  "w": "die Bildung",
+  "ru": "образование",
+  "bau": "от bilden — образовывать, формировать",
+  "merk": "bilden — лепить, формировать (Bild — образ, картинка). Weiterbildung — повышение квалификации, «образование дальше»."
+ },
+ {
+  "k": "verbraucherzentrale",
+  "w": "die Verbraucherzentrale",
+  "ru": "центр защиты прав потребителей",
+  "bau": "Verbraucher (потребитель) + Zentrale",
+  "merk": "brauchen — нуждаться, ver-brauchen — потреблять. Туда идут с проблемами покупок, а не с политикой — частый неверный вариант."
+ },
+ {
+  "k": "kommunalwahl",
+  "w": "die Kommunalwahl",
+  "ru": "выборы в органы местного самоуправления",
+  "bau": "kommunal (местный) + Wahl",
+  "merk": "На них ценз ниже: в одиннадцати землях голосуют с 16 лет."
+ },
+ {
+  "k": "außenminister",
+  "w": "die Außenministerin / der Außenminister",
+  "ru": "министр иностранных дел",
+  "bau": "außen (снаружи) + Minister",
+  "merk": "«Министр внешнего». Ключ к десятку вопросов: у земель такого министра нет — внешняя политика только у федерации."
+ },
+ {
+  "k": "innenminister",
+  "w": "die Innenministerin / der Innenminister",
+  "ru": "министр внутренних дел",
+  "bau": "innen (внутри) + Minister",
+  "merk": "Пара к Außen-: innen — внутри, außen — снаружи. У земель есть."
+ },
+ {
+  "k": "finanzminister",
+  "w": "die Finanzministerin / der Finanzminister",
+  "ru": "министр финансов",
+  "bau": "Finanzen + Minister",
+  "merk": "Есть и у федерации, и у каждой земли."
+ },
+ {
+  "k": "justizminister",
+  "w": "die Justizministerin / der Justizminister",
+  "ru": "министр юстиции",
+  "bau": "Justiz (юстиция) + Minister",
+  "merk": "Тоже есть у каждой земли — в отличие от Außenminister."
+ },
+ {
+  "k": "partei",
+  "w": "die Partei",
+  "ru": "партия",
+  "bau": "интернациональное",
+  "merk": "Не путать с Fraktion: Partei в стране, Fraktion — её депутаты в парламенте. Запрет партии — Parteiverbot, решает Bundesverfassungsgericht."
+ },
+ {
+  "k": "abkürzung",
+  "w": "die Abkürzung",
+  "ru": "сокращение, аббревиатура",
+  "bau": "ab + kurz (короткий)",
+  "merk": "«Укорочение». Каталог спрашивает CDU, CSU, SPD, FDP, DDR, EU — все Abkürzungen."
+ },
+ {
+  "k": "eltern",
+  "w": "die Eltern",
+  "ru": "родители",
+  "bau": "от alt (старший)",
+  "merk": "Буквально «старшие». Только множественное число. Elterngeld — пособие родителям, Elternzeit — родительский отпуск."
+ },
+ {
+  "k": "erziehung",
+  "w": "die Erziehung",
+  "ru": "воспитание",
+  "bau": "er- + ziehen (тянуть, растить)",
+  "merk": "ziehen — тянуть; растить ребёнка = «вытягивать». Erziehungsberechtigte — законные представители."
+ },
+ {
+  "k": "jugendamt",
+  "w": "das Jugendamt",
+  "ru": "ведомство по делам молодёжи",
+  "bau": "Jugend (молодёжь) + Amt",
+  "merk": "jung — молодой, Jugend — молодость. Помогает при проблемах воспитания и может забрать ребёнка из семьи."
+ },
+ {
+  "k": "schulpflicht",
+  "w": "die Schulpflicht",
+  "ru": "обязательное школьное обучение",
+  "bau": "Schule + Pflicht (обязанность)",
+  "merk": "Pflicht — долг, обязанность; противоположность Recht (право). Anwesenheitspflicht — обязанность присутствовать."
+ },
+ {
+  "k": "standesamt",
+  "w": "das Standesamt",
+  "ru": "загс",
+  "bau": "Stand (состояние, статус) + Amt",
+  "merk": "Ведомство «гражданского состояния». Туда идут жениться — первым делом, до церкви."
+ },
+ {
+  "k": "scheidung",
+  "w": "die Scheidung",
+  "ru": "развод",
+  "bau": "от scheiden — разделять",
+  "merk": "Unterscheiden — различать, тот же корень. Перед разводом обычно Trennungsjahr — год раздельной жизни."
+ },
+ {
+  "k": "gleichbehandlung",
+  "w": "die Gleichbehandlung",
+  "ru": "равное обращение",
+  "bau": "gleich (одинаковый) + Behandlung (обращение, от handeln)",
+  "merk": "gleich — равный, тот же. Нарушение — Diskriminierung."
+ },
+ {
+  "k": "diskriminierung",
+  "w": "die Diskriminierung",
+  "ru": "дискриминация",
+  "bau": "интернациональное",
+  "merk": "Узнаётся сразу. Примеры каталога: отказ в работе матери, инвалиду, человеку с тёмной кожей."
+ },
+ {
+  "k": "benachteilig",
+  "w": "benachteiligen",
+  "ru": "ущемлять, ставить в худшее положение",
+  "bau": "be- + Nachteil (недостаток, ущерб)",
+  "merk": "Vorteil — преимущество, Nachteil — недостаток. Никого нельзя benachteiligen из-за инвалидности."
+ },
+ {
+  "k": "religionsfreiheit",
+  "w": "die Religionsfreiheit",
+  "ru": "свобода вероисповедания",
+  "bau": "Religion + Freiheit",
+  "merk": "Государство и религиозные общины разделены: Staat und Religionsgemeinschaften sind getrennt."
+ },
+ {
+  "k": "religionsgemeinschaft",
+  "w": "die Religionsgemeinschaft",
+  "ru": "религиозная община",
+  "bau": "Religion + Gemeinschaft (сообщество)",
+  "merk": "Gemeinschaft — от gemein (общий), как и Gemeinde."
+ },
+ {
+  "k": "kirchensteuer",
+  "w": "die Kirchensteuer",
+  "ru": "церковный налог",
+  "bau": "Kirche (церковь) + Steuer (налог)",
+  "merk": "Потому в налоговой декларации и спрашивают о конфессии: налог удерживают вместе с подоходным."
+ },
+ {
+  "k": "steuer",
+  "w": "die Steuer",
+  "ru": "налог",
+  "bau": "—",
+  "merk": "Внимание: das Steuer — руль, die Steuer — налог. Einkommensteuer — подоходный, Umsatzsteuer — с оборота."
+ },
+ {
+  "k": "nationalsozialis",
+  "w": "der Nationalsozialismus",
+  "ru": "национал-социализм, нацизм",
+  "bau": "national + Sozialismus",
+  "merk": "Nationalsozialisten — нацисты. Период 1933–1945, время Diktatur."
+ },
+ {
+  "k": "weltkrieg",
+  "w": "der Weltkrieg",
+  "ru": "мировая война",
+  "bau": "Welt (мир) + Krieg (война)",
+  "merk": "Der Zweite Weltkrieg закончился 8 мая 1945 года в Европе."
+ },
+ {
+  "k": "diktatur",
+  "w": "die Diktatur",
+  "ru": "диктатура",
+  "bau": "интернациональное",
+  "merk": "Противоположность Demokratie. Партия, стремящаяся к диктатуре, — verfassungswidrig."
+ },
+ {
+  "k": "demokratie",
+  "w": "die Demokratie",
+  "ru": "демократия",
+  "bau": "интернациональное",
+  "merk": "Признаки по каталогу: свободные выборы, много партий, оппозиция. Не признак — Pressezensur (цензура прессы)."
+ },
+ {
+  "k": "monarchie",
+  "w": "die Monarchie",
+  "ru": "монархия",
+  "bau": "интернациональное",
+  "merk": "Германия — не монархия, а Republik. Частый неверный вариант."
+ },
+ {
+  "k": "gebiet",
+  "w": "das Gebiet",
+  "ru": "территория, область",
+  "bau": "от gebieten — повелевать, властвовать",
+  "merk": "«Область, где повелевают». Auf dem Gebiet der früheren DDR — на территории бывшей ГДР."
+ },
+ {
+  "k": "grenz",
+  "w": "die Grenze",
+  "ru": "граница",
+  "bau": "славянское заимствование — от «граница»",
+  "merk": "Редкий случай: немецкое слово пришло из славянских языков, так что оно тебе почти родное."
+ },
+ {
+  "k": "nachbarland",
+  "w": "das Nachbarland",
+  "ru": "соседняя страна",
+  "bau": "Nachbar (сосед) + Land",
+  "merk": "У Германии девять соседей. Nachbar — сосед, Nachbarschaft — соседство."
+ },
+ {
+  "k": "mitgliedstaat",
+  "w": "der Mitgliedstaat",
+  "ru": "государство-член",
+  "bau": "Mitglied (член) + Staat",
+  "merk": "mit (с) + Glied (звено, член) — «звено вместе с другими». В ЕС их 27."
+ },
+ {
+  "k": "abkommen",
+  "w": "das Abkommen",
+  "ru": "соглашение, договор",
+  "bau": "от abkommen — договориться",
+  "merk": "Das Schengener Abkommen — Шенгенское соглашение. Синоним Vertrag: die Römischen Verträge."
+ },
+ {
+  "k": "vertrag",
+  "w": "der Vertrag",
+  "ru": "договор",
+  "bau": "от vertragen — уживаться, договариваться",
+  "merk": "Verträge — договоры. Римские договоры 1957 года создали EWG."
+ },
+ {
+  "k": "passkontrolle",
+  "w": "die Passkontrolle",
+  "ru": "паспортный контроль",
+  "bau": "Pass (паспорт) + Kontrolle",
+  "merk": "Шенген значит: ohne Passkontrolle reisen — ездить без паспортного контроля."
+ },
+ {
+  "k": "anspruch",
+  "w": "der Anspruch",
+  "ru": "право требования, притязание",
+  "bau": "an + sprechen (говорить)",
+  "merk": "«Заявить о себе вслух». Anspruch auf einen Kindergartenplatz — право требовать место в саду."
+ },
+ {
+  "k": "antrag",
+  "w": "der Antrag",
+  "ru": "заявление, ходатайство",
+  "bau": "от antragen — подавать",
+  "merk": "einen Antrag stellen — подать заявление. Без Antrag не будет ни Elterngeld, ни чего-либо ещё в Германии."
+ },
+ {
+  "k": "erlaubnis",
+  "w": "die Erlaubnis",
+  "ru": "разрешение",
+  "bau": "от erlauben — разрешать",
+  "merk": "Gaststättenerlaubnis — разрешение на ресторан. Хвост -nis делает существительное: Ergebnis, Erlebnis."
+ },
+ {
+  "k": "anmeld",
+  "w": "anmelden",
+  "ru": "регистрировать, заявлять",
+  "bau": "an + melden (сообщать)",
+  "merk": "При переезде — sich anmelden в Einwohnermeldeamt. Демонстрацию тоже надо anmelden — заявить, но не просить разрешения."
+ },
+ {
+  "k": "einwohner",
+  "w": "die Einwohnerin / der Einwohner",
+  "ru": "житель",
+  "bau": "ein + wohnen (жить)",
+  "merk": "wohnen — проживать, Wohnung — квартира. Einwohnermeldeamt — где регистрируют жителей."
+ },
+ {
+  "k": "mehrheit",
+  "w": "die Mehrheit",
+  "ru": "большинство",
+  "bau": "mehr (больше) + -heit",
+  "merk": "Пара: Minderheit — меньшинство (minder — меньше). Mehrheitswahlrecht — мажоритарная система."
+ },
+ {
+  "k": "stimmen",
+  "w": "die Stimme",
+  "ru": "голос (на выборах)",
+  "bau": "—",
+  "merk": "Stimmen zählen — считать голоса. Abstimmung — голосование, zustimmen — соглашаться."
+ },
+ {
+  "k": "volljährig",
+  "w": "volljährig",
+  "ru": "совершеннолетний",
+  "bau": "voll (полный) + Jahr (год)",
+  "merk": "«Полных лет» — с 18. Пара: strafmündig — уголовно ответственный, с 14."
+ },
+ {
+  "k": "schutz",
+  "w": "der Schutz",
+  "ru": "защита",
+  "bau": "от schützen — защищать",
+  "merk": "Mutterschutz — защита матери, Kündigungsschutz — защита от увольнения, Datenschutz — защита данных."
+ },
+ {
+  "k": "pflicht",
+  "w": "die Pflicht",
+  "ru": "обязанность, долг",
+  "bau": "—",
+  "merk": "Противоположность Recht. Schulpflicht — обязанность учиться; голосовать же — Recht, а не Pflicht."
+ },
+ {
+  "k": "gesetz",
+  "w": "das Gesetz",
+  "ru": "закон",
+  "bau": "от setzen (ставить) — «установленное»",
+  "merk": "Gesetze beschließen — принимать законы, это делает парламент. Grundgesetz — основной закон."
+ },
+ {
+  "k": "beschließ",
+  "w": "beschließen",
+  "ru": "принимать решение, постановлять",
+  "bau": "be- + schließen (закрывать)",
+  "merk": "«Закрыть вопрос» — принять решение. Das Parlament beschließt ein Gesetz."
+ },
+ {
+  "k": "regierung",
+  "w": "die Regierung",
+  "ru": "правительство",
+  "bau": "от regieren — править",
+  "merk": "Bundesregierung — федеральное правительство. Regierungspartei — правящая партия."
+ },
+ {
+  "k": "verantwortlich",
+  "w": "verantwortlich",
+  "ru": "ответственный",
+  "bau": "от Antwort (ответ)",
+  "merk": "Тот, кто должен дать ответ. Eltern sind für die Erziehung verantwortlich."
+ },
+ {
+  "k": "informier",
+  "w": "informieren",
+  "ru": "информировать; sich informieren — узнавать",
+  "bau": "интернациональное",
+  "merk": "sich über politische Themen informieren — узнавать о политике. Возвратное sich меняет смысл: не «сообщать», а «узнавать самому»."
+ },
+ {
+  "k": "unterstütz",
+  "w": "unterstützen",
+  "ru": "поддерживать",
+  "bau": "unter (под) + stützen (подпирать)",
+  "merk": "Буквально «подпирать снизу» — как Stütze, опора."
+ },
+ {
+  "k": "gründ",
+  "w": "gründen",
+  "ru": "основывать",
+  "bau": "от Grund (основа)",
+  "merk": "1949 gegründet — основаны ФРГ и ГДР. Gründung — основание, Grundgesetz — из того же корня."
+ },
+ {
+  "k": "teilnahm",
+  "w": "teilnehmen",
+  "ru": "участвовать",
+  "bau": "Teil (часть) + nehmen (брать)",
+  "merk": "«Брать часть» — участвовать. An der Wahl teilnehmen — участвовать в выборах."
+ },
+ {
+  "k": "entscheid",
+  "w": "entscheiden",
+  "ru": "решать",
+  "bau": "ent- + scheiden (разделять)",
+  "merk": "Тот же корень, что в Scheidung (развод): решить — значит отсечь варианты. Entscheidung — решение."
+ },
+ {
+  "k": "bestraf",
+  "w": "bestrafen",
+  "ru": "наказывать",
+  "bau": "be- + Strafe (наказание)",
+  "merk": "Wer den Holocaust leugnet, wird bestraft. Приставка be- делает из существительного глагол."
+ },
+ {
+  "k": "verbiet",
+  "w": "verbieten",
+  "ru": "запрещать",
+  "bau": "ver- + bieten (предлагать)",
+  "merk": "Приставка ver- часто переворачивает: bieten — предлагать, verbieten — запрещать. Verboten — запрещено, слово на каждом втором немецком знаке."
+ },
+ {
+  "k": "abschaff",
+  "w": "abschaffen",
+  "ru": "отменять, упразднять",
+  "bau": "ab (прочь) + schaffen (делать)",
+  "merk": "«Сделать прочь». Die Pressefreiheit kann nicht abgeschafft werden — свободу прессы отменить нельзя."
+ },
+ {
+  "k": "äußer",
+  "w": "äußern",
+  "ru": "высказывать",
+  "bau": "от außen (снаружи)",
+  "merk": "«Вынести наружу» — высказать. Seine Meinung äußern — высказать своё мнение."
+ },
+ {
+  "k": "vertret",
+  "w": "vertreten",
+  "ru": "представлять (интересы)",
+  "bau": "ver- + treten (ступать)",
+  "merk": "«Ступать вместо кого-то». Gewerkschaften vertreten die Arbeitnehmer. Vertreter — представитель."
+ },
+ {
+  "k": "kontrollier",
+  "w": "kontrollieren",
+  "ru": "контролировать, проверять",
+  "bau": "интернациональное",
+  "merk": "Die Opposition kontrolliert die Regierung — главная функция оппозиции."
+ },
+ {
+  "k": "ernenn",
+  "w": "ernennen",
+  "ru": "назначать (на должность)",
+  "bau": "er- + nennen (называть)",
+  "merk": "«Назвать на должность». Президент ernennt министров — назначает, но не выбирает."
+ },
+ {
+  "k": "aufgabe",
+  "w": "die Aufgabe",
+  "ru": "задача",
+  "bau": "auf + geben (давать)",
+  "merk": "И «задача», и «задание в тесте». Каталог всё время спрашивает: was gehört zu den Aufgaben."
+ },
+ {
+  "k": "gehalt",
+  "w": "das Gehalt",
+  "ru": "оклад, зарплата служащего",
+  "bau": "от halten (держать)",
+  "merk": "das Gehalt — зарплата, der Gehalt — содержание (чего-то). Артикль меняет смысл."
+ },
+ {
+  "k": "rechnung",
+  "w": "die Rechnung",
+  "ru": "счёт (к оплате)",
+  "bau": "от rechnen — считать",
+  "merk": "rechnen — считать, Rechner — компьютер. Неверный счёт от ведомства — повод для Widerspruch."
+ },
+ {
+  "k": "reklamier",
+  "w": "reklamieren",
+  "ru": "предъявлять претензию на товар",
+  "bau": "интернациональное",
+  "merk": "Сломанный телевизор — reklamieren, а не выбрасывать. Русское «рекламация» — то же самое."
+ },
+ {
+  "k": "führerschein",
+  "w": "der Führerschein",
+  "ru": "водительские права",
+  "bau": "Führer (водитель) + Schein (бумага, справка)",
+  "merk": "Schein — любая справка: Krankenschein, Gutschein (ваучер). Führen — вести."
+ },
+ {
+  "k": "volkshochschule",
+  "w": "die Volkshochschule",
+  "ru": "народный университет, курсы для взрослых",
+  "bau": "Volk (народ) + Hochschule (вуз)",
+  "merk": "Не вуз в нашем смысле, а курсы: языки, компьютер, рисование. Для Weiterbildung."
+ },
+ {
+  "k": "abendgymnasium",
+  "w": "das Abendgymnasium",
+  "ru": "вечерняя гимназия",
+  "bau": "Abend (вечер) + Gymnasium",
+  "merk": "Там взрослые добирают Abitur — аттестат для поступления в университет."
+ },
+ {
+  "k": "abitur",
+  "w": "das Abitur",
+  "ru": "аттестат зрелости, дающий право на вуз",
+  "bau": "от латинского abire — уходить (из школы)",
+  "merk": "Без Abitur в университет не берут. Разговорно — Abi."
+ },
+ {
+  "k": "hausordnung",
+  "w": "die Hausordnung",
+  "ru": "правила проживания в доме",
+  "bau": "Haus (дом) + Ordnung (порядок)",
+  "merk": "Правила, обязательные для всех жильцов: тишина, мусор, лестница."
+ },
+ {
+  "k": "nachtruhe",
+  "w": "die Nachtruhe",
+  "ru": "ночной покой (тишина по закону)",
+  "bau": "Nacht (ночь) + Ruhe (покой)",
+  "merk": "Начинается в 22:00. Ruhe — покой, Ruhestand — пенсия, «состояние покоя»."
+ },
+ {
+  "k": "briefgeheimnis",
+  "w": "das Briefgeheimnis",
+  "ru": "тайна переписки",
+  "bau": "Brief (письмо) + Geheimnis (тайна)",
+  "merk": "Вскрыл чужое письмо — нарушил Briefgeheimnis."
+ },
+ {
+  "k": "bürgerinitiative",
+  "w": "die Bürgerinitiative",
+  "ru": "гражданская инициатива",
+  "bau": "Bürger + Initiative",
+  "merk": "Способ повлиять на решение без депутатов: собрались жители и потребовали сохранить автобус."
+ },
+ {
+  "k": "brauch",
+  "w": "der Brauch",
+  "ru": "обычай",
+  "bau": "от brauchen — употреблять, использовать",
+  "merk": "Bräuche — обычаи. Рождественский — ёлку наряжать, пасхальный — яйца красить."
+ },
+ {
+  "k": "adventszeit",
+  "w": "die Adventszeit",
+  "ru": "адвент, четыре недели перед Рождеством",
+  "bau": "латинское adventus — приход",
+  "merk": "Ожидание прихода Рождества. Adventskalender — календарь с окошками."
+ },
+ {
+  "k": "gastarbeiter",
+  "w": "die Gastarbeiterin / der Gastarbeiter",
+  "ru": "гастарбайтер, приглашённый рабочий",
+  "bau": "Gast (гость) + Arbeiter (рабочий)",
+  "merk": "«Рабочий-гость» — их вербовали в 50-60-е, первых из Италии. Слово ушло в русский без изменений."
+ },
+ {
+  "k": "anwerb",
+  "w": "anwerben",
+  "ru": "вербовать, нанимать",
+  "bau": "an + werben (рекламировать, добиваться)",
+  "merk": "Werbung — реклама. Angeworben wurden Gastarbeiter — их завербовали на работу."
+ }
+]
