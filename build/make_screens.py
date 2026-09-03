@@ -135,23 +135,19 @@ img.save('screenshots/screen-3.png')
 CAPS = ('Start · Prüfung, Fehler, Themen',
         'Bildfragen mit den Wappen des Katalogs',
         'Ergebnis · jeder Fehler mit richtiger Antwort')
-# dieselbe Breite und dieselben Ränder wie das Titelbild (1200 px, 56 px
-# Rand), damit die Streifen im README auf einer Linie mit ihm sitzen
-CW, PAD, GAP, CAP = 1200, 56, 46, 56
-SW = (CW - 2 * PAD - 2 * GAP) // 3
-strip = Image.new('RGBA', (CW, PAD // 2 + int(SW * H / W) + CAP), (0, 0, 0, 0))
+# Das Titelbild reicht bis an den Rand seiner Datei. Der Streifen muss
+# das auch: keine äusseren Ränder, nur Luft zwischen den Karten, sonst
+# stehen die drei Bildschirme im README schmaler als das Bild darüber.
+CW, GAP, CAP = 1200, 46, 56
+SW = (CW - 2 * GAP) // 3
+CW = SW * 3 + GAP * 2      # Restpixel der Division nicht als durchsichtigen Rand stehen lassen
+strip = Image.new('RGBA', (CW, int(SW * H / W) + CAP), (0, 0, 0, 0))
 sd = ImageDraw.Draw(strip)
 for i, name in enumerate(('screen-1', 'screen-2', 'screen-3')):
     im = Image.open(f'screenshots/{name}.png')
     im = im.resize((SW, int(SW * H / W)), Image.LANCZOS)
-    x = PAD + i * (SW + GAP)
-    top = PAD // 2
-    # weicher Schatten, damit die drei als eigene Karten lesbar sind und
-    # nicht als ein durchgehendes Feld
-    sh = Image.new('RGBA', (SW + 40, im.height + 40), (0, 0, 0, 0))
-    ImageDraw.Draw(sh).rectangle([20, 22, SW + 19, im.height + 23], fill=(20, 24, 26, 46))
-    sh = sh.filter(ImageFilter.GaussianBlur(9))
-    strip.alpha_composite(sh, (x - 20, top - 20))
+    x = i * (SW + GAP)
+    top = 0
     strip.paste(im, (x, top))
     sd.rectangle([x, top, x + SW - 1, top + im.height - 1], outline=RULE)
     tw = sd.textlength(CAPS[i], ar(14))
