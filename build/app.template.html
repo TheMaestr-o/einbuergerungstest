@@ -156,6 +156,7 @@ select{
   background:color-mix(in srgb,var(--mark) 8%,transparent);
   font-size:15.5px;line-height:1.45;color:var(--ink-2);max-width:64ch
 }
+.why strong{font-weight:600;color:var(--ink)}
 .why b{font-family:Archivo,sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.14em;
   text-transform:uppercase;color:var(--ink-3);display:block;margin-bottom:3px}
 .rev .why{margin:8px 0 0;font-size:14.5px}
@@ -737,7 +738,7 @@ function render(){
   const why = $('#qWhy');
   why.hidden = !(picked!=null && immediate && q.why && S.ru);
   if(!why.hidden){
-    why.innerHTML = '<b>' + dec(L.why) + '</b>' + esc(dec(q.why));
+    why.innerHTML = '<b>' + dec(L.why) + '</b>' + md(dec(q.why));
     const b = q.brief && BRIEF[q.brief];
     if(b){
       const btn = document.createElement('button');
@@ -759,6 +760,7 @@ function render(){
   $('#bNext').textContent = run.i===run.list.length-1
     ? (run.mode==='exam' ? 'Abgeben' : 'Auswertung') : 'Weiter';
 }
+const md = t => esc(t).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
 function openBrief(id, back){
   const b = BRIEF[id];
   if(!b) return;
@@ -766,8 +768,7 @@ function openBrief(id, back){
   $('#readTitle').textContent = b.title;
   const n = QUESTIONS.filter(q => q.brief === id).length;
   $('#readSub').textContent = n + ' Fragen';
-  $('#readBody').innerHTML = b.text.split('\n\n').map(par =>
-    '<p>' + esc(par).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>') + '</p>').join('');
+  $('#readBody').innerHTML = b.text.split('\n\n').map(par => '<p>' + md(par) + '</p>').join('');
   show('read');
 }
 let readBack = 'home';
@@ -820,7 +821,7 @@ function finish(){
     if(pickedIdx!=null)
       h += '<p class="a b"><span class="t">gewählt</span><span>'+esc(qq.images.length===4?'Bild '+(pickedIdx+1):qq.answers[pickedIdx])+'</span></p>';
     else h += '<p class="a b"><span class="t">gewählt</span><span>— nicht beantwortet</span></p>';
-    if(qq.why && S.ru) h += '<div class="why"><b>'+dec(L.why)+'</b>'+esc(dec(qq.why))+'</div>';
+    if(qq.why && S.ru) h += '<div class="why"><b>'+dec(L.why)+'</b>'+md(dec(qq.why))+'</div>';
     li.innerHTML = h; ul.appendChild(li);
   });
   run.wrongIds = wrong.map(x=>x.qq.id);
