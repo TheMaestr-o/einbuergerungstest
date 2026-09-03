@@ -15,6 +15,7 @@ import re
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 TPL = ROOT / 'build' / 'app.template.html'
 DATA = ROOT / 'data' / 'questions.json'
+BRIEFS = ROOT / 'data' / 'briefings.json'
 IMGDIR = ROOT / 'data' / 'images'
 FONTS = ROOT / 'build' / 'fonts.inline.css'
 OUT = ROOT / 'index.html'
@@ -44,7 +45,11 @@ slim = [{
     'id': q['id'], 'num': q['num'], 'category': q['category'], 'topic': q['topic'],
     'question': q['question'], 'answers': q['answers'], 'correct': q['correct'],
     'credit': q['credit'], 'images': q['images'], 'why': q.get('why'),
+    'brief': q.get('brief'),
 } for q in questions]
+
+briefs = [{'id': b['id'], 'title': b['title'], 'text': b['text']}
+          for b in json.loads(BRIEFS.read_text(encoding='utf-8'))]
 
 html = TPL.read_text(encoding='utf-8')
 
@@ -55,6 +60,7 @@ if FONTS.exists():
                   '<style>\n' + FONTS.read_text(encoding='utf-8') + '</style>', html)
 html = html.replace('__DATA__', json.dumps(slim, ensure_ascii=False, separators=(',', ':')))
 html = html.replace('__IMAGES__', json.dumps(images, separators=(',', ':')))
+html = html.replace('__BRIEFS__', json.dumps(briefs, ensure_ascii=False, separators=(',', ':')))
 # eigenständige Datei: vollständiges Dokument mit Zeichensatz-Angabe,
 # sonst liest der Browser die UTF-8-Umlaute beim Öffnen von der Platte als Latin-1
 head, body = html.split('<!--/head-->', 1)
@@ -64,4 +70,5 @@ FRAGMENT.write_text(html.replace('<!--/head-->\n', ''), encoding='utf-8')
 
 print(f'{OUT.relative_to(ROOT)}: {OUT.stat().st_size/1e6:.2f} MB')
 print(f'  {len(slim)} Fragen, {len(images)} Bilder eingebettet')
-print(f'  {sum(1 for q in slim if q["why"])} Fragen mit russischer Erklärung')
+print(f'  {sum(1 for q in slim if q["why"])} Fragen mit Erklärung, '
+      f'{sum(1 for q in slim if q["brief"])} mit Hintergrundtext ({len(briefs)} Texte)')

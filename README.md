@@ -74,7 +74,7 @@ One deliberate oddity: in question 201 the official PDF misspells "Niedersachsen
 
 <br>
 
-## The explanations
+## Learning, not just drilling
 
 Every one of the 460 questions carries a one-sentence explanation in Russian of **why that answer is the right one**, with the German term kept where it is worth memorising:
 
@@ -82,6 +82,10 @@ Every one of the 460 questions carries a one-sentence explanation in Russian of 
 > Статья 12 Основного закона запрещает принудительный труд (Zwangsarbeit).
 
 The machine-written "explanations" that ship with the second dataset were not usable: 228 of 458 are the placeholder *«Важный вопрос для жизни в Германии»*, and the rest paraphrase the topic instead of justifying the answer. These were written from scratch. The 160 state questions follow ten fixed patterns and are generated per state from one table.
+
+Behind the one-liners sit **eleven background essays in Russian**, one per storyline the catalogue keeps circling: the Basic Law, who elects whom, how the two votes work, 1933–1945, the Shoah and the responsibility towards Israel, the occupation zones, the GDR and the Wall, the European Union, the welfare system, courts and lay judges, everyday life and equal treatment. **275 of the 300 nationwide questions link to the essay they belong to** — read one storyline and dozens of questions answer themselves. They are also browsable on their own, like a small textbook.
+
+The Russian layer can be switched off entirely under *Einstellungen → Русские подсказки*; the app then runs in German only.
 
 <br>
 

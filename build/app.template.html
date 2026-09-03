@@ -143,6 +143,25 @@ select{
 .why b{font-family:Archivo,sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.14em;
   text-transform:uppercase;color:var(--ink-3);display:block;margin-bottom:3px}
 .rev .why{margin:8px 0 0;font-size:14.5px}
+.why .more{
+  display:inline-flex;align-items:center;gap:6px;margin-top:9px;cursor:pointer;
+  background:transparent;border:1px solid var(--mark);color:var(--ink-2);border-radius:2px;
+  font-family:Archivo,sans-serif;font-size:12.5px;font-weight:600;padding:6px 10px
+}
+.why .more:hover{background:color-mix(in srgb,var(--mark) 14%,transparent)}
+.read-bd{padding:4px 20px 20px;max-width:66ch}
+.read-bd p{margin:0 0 13px;font-size:17px;line-height:1.55}
+.read-bd strong{font-weight:600;color:var(--ink)}
+.read-nav{display:flex;gap:8px;padding:14px 20px;border-top:1px solid var(--rule-soft);flex-wrap:wrap}
+.brieflist{list-style:none;margin:0;padding:0}
+.brieflist button{
+  width:100%;display:flex;align-items:center;gap:12px;text-align:left;cursor:pointer;
+  background:transparent;border:0;border-top:1px solid var(--rule-soft);padding:13px 20px
+}
+.brieflist li:first-child button{border-top:0}
+.brieflist button:hover{background:color-mix(in srgb,var(--mark) 7%,transparent)}
+.brieflist .t{font-family:Archivo,sans-serif;font-weight:600;font-size:15px;flex:1}
+.brieflist .n{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-3)}
 .qpic{margin:14px 0 0}
 .qpic img{max-width:100%;border:1px solid var(--rule-soft);border-radius:2px;background:#fff}
 
@@ -332,9 +351,15 @@ details.legal > summary:hover{color:var(--ink)}
       </div>
     </section>
 
+    <section class="sheet" id="briefSheet">
+      <div class="sheet-hd"><h2>Разборы тем</h2><span class="sub">по-русски, с историей</span></div>
+      <ul class="brieflist" id="briefList"></ul>
+    </section>
+
     <section class="sheet">
       <div class="sheet-hd"><h2>Einstellungen</h2></div>
       <div class="sheet-bd" style="display:flex;gap:10px;flex-wrap:wrap">
+        <button class="chip" id="ruBtn" aria-pressed="true">Русские подсказки</button>
         <button class="chip" id="shufBtn" aria-pressed="false">Antworten mischen</button>
         <button class="chip" id="resetBtn">Fortschritt löschen</button>
       </div>
@@ -468,6 +493,18 @@ details.legal > summary:hover{color:var(--ink)}
     </section>
   </section>
 
+  <!-- ============ HINTERGRUND ============ -->
+  <section id="read" hidden>
+    <section class="sheet">
+      <div class="sheet-hd"><h2 id="readTitle"></h2><span class="sub" id="readSub"></span></div>
+      <div class="read-bd" id="readBody"></div>
+      <div class="read-nav">
+        <button class="btn" id="readBack">Zurück</button>
+        <button class="btn ghost" id="readHome">Startseite</button>
+      </div>
+    </section>
+  </section>
+
   <!-- ============ ERGEBNIS ============ -->
   <section id="result" hidden>
     <section class="sheet">
@@ -493,6 +530,8 @@ details.legal > summary:hover{color:var(--ink)}
 <script>
 const QUESTIONS = __DATA__;
 const IMAGES = __IMAGES__;
+const BRIEFS = __BRIEFS__;
+const BRIEF = Object.fromEntries(BRIEFS.map(b => [b.id, b]));
 const LAENDER = [...new Set(QUESTIONS.filter(q=>q.category).map(q=>q.category))].sort((a,b)=>a.localeCompare(b,'de'));
 const TOPICS  = [...new Set(QUESTIONS.filter(q=>!q.category).map(q=>q.topic))].sort((a,b)=>a.localeCompare(b,'de'));
 const PASS = 17, EXAM_N = 33, EXAM_STATE = 3, EXAM_MIN = 60;
@@ -500,7 +539,7 @@ const $ = s => document.querySelector(s);
 
 /* ---------- Speicher ---------- */
 const KEY = 'eb.v1';
-const blank = {land:'Berlin', shuffle:false, theme:null, st:{}, exams:[]};
+const blank = {land:'Berlin', ru:true, shuffle:false, theme:null, st:{}, exams:[]};
 let S = load();
 function load(){
   try{ return Object.assign({}, blank, JSON.parse(localStorage.getItem(KEY)||'{}')); }
@@ -561,7 +600,7 @@ function tick(){
   if(left<=0) finish();
 }
 function show(id){
-  for(const s of ['home','quiz','result']) $('#'+s).hidden = (s!==id);
+  for(const s of ['home','quiz','result','read']) $('#'+s).hidden = (s!==id);
   window.scrollTo({top:0, behavior:'instant'});
 }
 
@@ -634,8 +673,18 @@ function render(){
   });
 
   const why = $('#qWhy');
-  why.hidden = !(picked!=null && immediate && q.why);
-  if(!why.hidden) why.innerHTML = '<b>Почему так</b>' + esc(q.why);
+  why.hidden = !(picked!=null && immediate && q.why && S.ru);
+  if(!why.hidden){
+    why.innerHTML = '<b>Почему так</b>' + esc(q.why);
+    const b = q.brief && BRIEF[q.brief];
+    if(b){
+      const btn = document.createElement('button');
+      btn.className = 'more'; btn.type = 'button';
+      btn.textContent = '↗ Разбор: ' + b.title;
+      btn.onclick = () => openBrief(b.id, 'quiz');
+      why.appendChild(btn);
+    }
+  }
 
   const v = $('#qVerdict');
   v.textContent = ''; v.className='verdict';
@@ -648,6 +697,18 @@ function render(){
   $('#bNext').textContent = run.i===run.list.length-1
     ? (run.mode==='exam' ? 'Abgeben' : 'Auswertung') : 'Weiter';
 }
+function openBrief(id, back){
+  const b = BRIEF[id];
+  if(!b) return;
+  readBack = back;
+  $('#readTitle').textContent = b.title;
+  const n = QUESTIONS.filter(q => q.brief === id).length;
+  $('#readSub').textContent = n + ' Fragen';
+  $('#readBody').innerHTML = b.text.split('\n\n').map(par =>
+    '<p>' + esc(par).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>') + '</p>').join('');
+  show('read');
+}
+let readBack = 'home';
 const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 function pick(oi){
@@ -751,6 +812,17 @@ function refreshHome(){
   });
 
   $('#shufBtn').setAttribute('aria-pressed', S.shuffle?'true':'false');
+  $('#ruBtn').setAttribute('aria-pressed', S.ru?'true':'false');
+  $('#briefSheet').hidden = !S.ru;
+  const bl = $('#briefList'); bl.innerHTML='';
+  BRIEFS.forEach(b => {
+    const n = QUESTIONS.filter(q => q.brief === b.id).length;
+    const li = document.createElement('li'), btn = document.createElement('button');
+    btn.type='button';
+    btn.innerHTML = '<span class="t">'+esc(b.title)+'</span><span class="n">'+n+'</span>';
+    btn.onclick = () => openBrief(b.id, 'home');
+    li.appendChild(btn); bl.appendChild(li);
+  });
 }
 const pool = () => QUESTIONS.filter(q => !q.category || q.category===S.land);
 const wrongIds = () => Object.keys(S.st).filter(id=>S.st[id].w>0 && byId[id]).map(id=>byId[id]);
@@ -765,6 +837,9 @@ $('#bPrev').onclick = () => { if(run.i>0){ run.i--; render(); } };
 $('#bQuit').onclick = () => { if(run && run.timer) clearInterval(run.timer); run=null; refreshHome(); show('home'); };
 $('#rHome').onclick = () => { refreshHome(); show('home'); };
 $('#shufBtn').onclick = () => { S.shuffle=!S.shuffle; save(); refreshHome(); };
+$('#ruBtn').onclick = () => { S.ru=!S.ru; save(); refreshHome(); if(run) render(); };
+$('#readBack').onclick = () => show(readBack === 'quiz' && run ? 'quiz' : 'home');
+$('#readHome').onclick = () => { refreshHome(); show('home'); };
 let armed = false, armTimer = null;
 $('#resetBtn').onclick = () => {
   const b = $('#resetBtn');
