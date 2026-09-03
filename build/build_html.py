@@ -48,8 +48,18 @@ slim = [{
     'brief': q.get('brief'),
 } for q in questions]
 
-briefs = [{'id': b['id'], 'title': b['title'], 'text': b['text']}
+# Die russische Hilfsebene ist versteckt: base64 statt Klartext, damit im
+# Quelltext der Seite kein kyrillisches Zeichen auftaucht. Das ist Tarnung
+# vor zufälligen Blicken, kein Schutz - wer sucht, findet es trotzdem.
+def hide(t):
+    return base64.b64encode(t.encode('utf-8')).decode('ascii') if t else t
+
+for q in slim:
+    q['why'] = hide(q['why'])
+briefs = [{'id': b['id'], 'title': hide(b['title']), 'text': hide(b['text'])}
           for b in json.loads(BRIEFS.read_text(encoding='utf-8'))]
+
+
 
 html = TPL.read_text(encoding='utf-8')
 

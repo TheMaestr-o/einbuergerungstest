@@ -352,14 +352,14 @@ details.legal > summary:hover{color:var(--ink)}
     </section>
 
     <section class="sheet" id="briefSheet">
-      <div class="sheet-hd"><h2>Разборы тем</h2><span class="sub">по-русски, с историей</span></div>
+      <div class="sheet-hd"><h2 id="briefTitle"></h2><span class="sub" id="briefSub"></span></div>
       <ul class="brieflist" id="briefList"></ul>
     </section>
 
     <section class="sheet">
       <div class="sheet-hd"><h2>Einstellungen</h2></div>
       <div class="sheet-bd" style="display:flex;gap:10px;flex-wrap:wrap">
-        <button class="chip" id="ruBtn" aria-pressed="true">Русские подсказки</button>
+        <button class="chip" id="ruBtn" aria-pressed="false" hidden>RU</button>
         <button class="chip" id="shufBtn" aria-pressed="false">Antworten mischen</button>
         <button class="chip" id="resetBtn">Fortschritt löschen</button>
       </div>
@@ -530,7 +530,12 @@ details.legal > summary:hover{color:var(--ink)}
 <script>
 const QUESTIONS = __DATA__;
 const IMAGES = __IMAGES__;
-const BRIEFS = __BRIEFS__;
+// die wenigen Oberflächenwörter der Zusatzebene, ebenfalls kodiert
+const L = {why:'0J/QvtGH0LXQvNGDINGC0LDQug==', more:'0KDQsNC30LHQvtGA',
+           head:'0KDQsNC30LHQvtGA0Ysg0YLQtdC8',
+           sub:'0L/QviTRgNGD0YHRgdC60LgsINGBINC40YHRgtC+0YDQuNC10Lk='};
+const dec = s => new TextDecoder().decode(Uint8Array.from(atob(s), c => c.charCodeAt(0)));
+const BRIEFS = __BRIEFS__.map(b => ({id:b.id, title:dec(b.title), text:dec(b.text)}));
 const BRIEF = Object.fromEntries(BRIEFS.map(b => [b.id, b]));
 const LAENDER = [...new Set(QUESTIONS.filter(q=>q.category).map(q=>q.category))].sort((a,b)=>a.localeCompare(b,'de'));
 const TOPICS  = [...new Set(QUESTIONS.filter(q=>!q.category).map(q=>q.topic))].sort((a,b)=>a.localeCompare(b,'de'));
@@ -539,7 +544,7 @@ const $ = s => document.querySelector(s);
 
 /* ---------- Speicher ---------- */
 const KEY = 'eb.v1';
-const blank = {land:'Berlin', ru:true, shuffle:false, theme:null, st:{}, exams:[]};
+const blank = {land:'Berlin', ru:false, unlocked:false, shuffle:false, theme:null, st:{}, exams:[]};
 let S = load();
 function load(){
   try{ return Object.assign({}, blank, JSON.parse(localStorage.getItem(KEY)||'{}')); }
@@ -547,6 +552,24 @@ function load(){
 }
 function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
 function rec(id){ return S.st[id] || (S.st[id] = {s:0,r:0,w:0}); }
+
+/* ---------- Zusatzebene ---------- */
+// Die russische Hilfe ist standardmäßig aus und im Aufbau nicht sichtbar.
+// Zwei Wege sie einzuschalten: die Adresse mit #ru aufrufen (Lesezeichen)
+// oder fünfmal kurz auf den Farbbalken tippen (auf dem Telefon).
+function unlock(on){
+  S.unlocked = on; S.ru = on; save(); refreshHome(); if(run) render();
+}
+if (/(^|[#?&])ru(=1)?($|&)/.test(location.hash + location.search)) {
+  unlock(true);
+  try { history.replaceState(null, '', location.pathname); } catch(e) {}
+}
+let taps = [];
+document.querySelector('.flagbar').addEventListener('click', () => {
+  const now = Date.now();
+  taps = taps.filter(t => now - t < 3000).concat(now);
+  if (taps.length >= 5) { taps = []; unlock(!S.unlocked); }
+});
 
 /* ---------- Theme ---------- */
 function applyTheme(){ if(S.theme) document.documentElement.setAttribute('data-theme', S.theme);
@@ -675,12 +698,12 @@ function render(){
   const why = $('#qWhy');
   why.hidden = !(picked!=null && immediate && q.why && S.ru);
   if(!why.hidden){
-    why.innerHTML = '<b>Почему так</b>' + esc(q.why);
+    why.innerHTML = '<b>' + dec(L.why) + '</b>' + esc(dec(q.why));
     const b = q.brief && BRIEF[q.brief];
     if(b){
       const btn = document.createElement('button');
       btn.className = 'more'; btn.type = 'button';
-      btn.textContent = '↗ Разбор: ' + b.title;
+      btn.textContent = '↗ ' + dec(L.more) + ': ' + b.title;
       btn.onclick = () => openBrief(b.id, 'quiz');
       why.appendChild(btn);
     }
@@ -758,7 +781,7 @@ function finish(){
     if(pickedIdx!=null)
       h += '<p class="a b"><span class="t">gewählt</span><span>'+esc(qq.images.length===4?'Bild '+(pickedIdx+1):qq.answers[pickedIdx])+'</span></p>';
     else h += '<p class="a b"><span class="t">gewählt</span><span>— nicht beantwortet</span></p>';
-    if(qq.why) h += '<div class="why"><b>Почему так</b>'+esc(qq.why)+'</div>';
+    if(qq.why && S.ru) h += '<div class="why"><b>'+dec(L.why)+'</b>'+esc(dec(qq.why))+'</div>';
     li.innerHTML = h; ul.appendChild(li);
   });
   run.wrongIds = wrong.map(x=>x.qq.id);
@@ -812,8 +835,10 @@ function refreshHome(){
   });
 
   $('#shufBtn').setAttribute('aria-pressed', S.shuffle?'true':'false');
+  $('#ruBtn').hidden = !S.unlocked;
   $('#ruBtn').setAttribute('aria-pressed', S.ru?'true':'false');
   $('#briefSheet').hidden = !S.ru;
+  if(S.ru){ $('#briefTitle').textContent = dec(L.head); $('#briefSub').textContent = dec(L.sub); }
   const bl = $('#briefList'); bl.innerHTML='';
   BRIEFS.forEach(b => {
     const n = QUESTIONS.filter(q => q.brief === b.id).length;
@@ -837,7 +862,7 @@ $('#bPrev').onclick = () => { if(run.i>0){ run.i--; render(); } };
 $('#bQuit').onclick = () => { if(run && run.timer) clearInterval(run.timer); run=null; refreshHome(); show('home'); };
 $('#rHome').onclick = () => { refreshHome(); show('home'); };
 $('#shufBtn').onclick = () => { S.shuffle=!S.shuffle; save(); refreshHome(); };
-$('#ruBtn').onclick = () => { S.ru=!S.ru; save(); refreshHome(); if(run) render(); };
+$('#ruBtn').onclick = () => { S.ru = !S.ru; save(); refreshHome(); if(run) render(); };
 $('#readBack').onclick = () => show(readBack === 'quiz' && run ? 'quiz' : 'home');
 $('#readHome').onclick = () => { refreshHome(); show('home'); };
 let armed = false, armTimer = null;
