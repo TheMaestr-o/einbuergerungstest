@@ -24,7 +24,7 @@
 
 <img src="screenshots/screens.png" width="100%" alt="Drei Bildschirme: Startseite, Bildfrage mit vier Wappen, Ergebnis mit Stempel und Fehlerliste">
 
-<br>
+<br><br><br>
 
 [![Trainer öffnen](https://img.shields.io/badge/%E2%96%B6%20%20TRAINER%20%C3%96FFNEN-b8891b?style=for-the-badge&labelColor=15181A)](https://themaestr-o.github.io/einbuergerungstest/)
 &nbsp;&nbsp;

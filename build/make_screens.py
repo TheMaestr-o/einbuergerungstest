@@ -139,7 +139,7 @@ CAPS = ('Start · Prüfung, Fehler, Themen',
 # Rand), damit die Streifen im README auf einer Linie mit ihm sitzen
 CW, PAD, GAP, CAP = 1200, 56, 46, 56
 SW = (CW - 2 * PAD - 2 * GAP) // 3
-strip = Image.new('RGB', (CW, PAD // 2 + int(SW * H / W) + CAP), PAPER)
+strip = Image.new('RGBA', (CW, PAD // 2 + int(SW * H / W) + CAP), (0, 0, 0, 0))
 sd = ImageDraw.Draw(strip)
 for i, name in enumerate(('screen-1', 'screen-2', 'screen-3')):
     im = Image.open(f'screenshots/{name}.png')
@@ -151,11 +151,10 @@ for i, name in enumerate(('screen-1', 'screen-2', 'screen-3')):
     sh = Image.new('RGBA', (SW + 40, im.height + 40), (0, 0, 0, 0))
     ImageDraw.Draw(sh).rectangle([20, 22, SW + 19, im.height + 23], fill=(20, 24, 26, 46))
     sh = sh.filter(ImageFilter.GaussianBlur(9))
-    strip.paste(Image.alpha_composite(
-        Image.new('RGBA', sh.size, PAPER + (255,)), sh).convert('RGB'), (x - 20, top - 20))
+    strip.alpha_composite(sh, (x - 20, top - 20))
     strip.paste(im, (x, top))
     sd.rectangle([x, top, x + SW - 1, top + im.height - 1], outline=RULE)
     tw = sd.textlength(CAPS[i], ar(14))
-    sd.text((x + (SW - tw) / 2, top + im.height + 16), CAPS[i], font=ar(14), fill=INK3)
+    sd.text((x + (SW - tw) / 2, top + im.height + 16), CAPS[i], font=ar(14), fill=INK3 + (255,))
 strip.save('screenshots/screens.png')
 print('screenshots/screen-1..3.png und screens.png geschrieben', strip.size)
