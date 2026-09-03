@@ -531,9 +531,7 @@ details.legal > summary:hover{color:var(--ink)}
 const QUESTIONS = __DATA__;
 const IMAGES = __IMAGES__;
 // die wenigen Oberflächenwörter der Zusatzebene, ebenfalls kodiert
-const L = {why:'0J/QvtGH0LXQvNGDINGC0LDQug==', more:'0KDQsNC30LHQvtGA',
-           head:'0KDQsNC30LHQvtGA0Ysg0YLQtdC8',
-           sub:'0L/QviTRgNGD0YHRgdC60LgsINGBINC40YHRgtC+0YDQuNC10Lk='};
+const L = {why:'0J/QvtGH0LXQvNGDINGC0LDQug==', more:'0KDQsNC30LHQvtGA', head:'0KDQsNC30LHQvtGA0Ysg0YLQtdC8', sub:'0L/Qvi3RgNGD0YHRgdC60LgsINGBINC40YHRgtC+0YDQuNC10Lk='};
 const dec = s => new TextDecoder().decode(Uint8Array.from(atob(s), c => c.charCodeAt(0)));
 const BRIEFS = __BRIEFS__.map(b => ({id:b.id, title:dec(b.title), text:dec(b.text)}));
 const BRIEF = Object.fromEntries(BRIEFS.map(b => [b.id, b]));
