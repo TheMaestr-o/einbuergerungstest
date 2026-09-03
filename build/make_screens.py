@@ -8,7 +8,7 @@ README nicht auftauchen.
 """
 import os
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 PAPER, SHEET = (0xEF, 0xF0, 0xEC), (0xFB, 0xFB, 0xF9)
 RULE, RULE_S = (0xC9, 0xCB, 0xC3), (0xE0, 0xE1, 0xDB)
@@ -137,7 +137,7 @@ CAPS = ('Start · Prüfung, Fehler, Themen',
         'Ergebnis · jeder Fehler mit richtiger Antwort')
 # dieselbe Breite und dieselben Ränder wie das Titelbild (1200 px, 56 px
 # Rand), damit die Streifen im README auf einer Linie mit ihm sitzen
-CW, PAD, GAP, CAP = 1200, 56, 25, 52
+CW, PAD, GAP, CAP = 1200, 56, 46, 56
 SW = (CW - 2 * PAD - 2 * GAP) // 3
 strip = Image.new('RGB', (CW, PAD // 2 + int(SW * H / W) + CAP), PAPER)
 sd = ImageDraw.Draw(strip)
@@ -146,6 +146,13 @@ for i, name in enumerate(('screen-1', 'screen-2', 'screen-3')):
     im = im.resize((SW, int(SW * H / W)), Image.LANCZOS)
     x = PAD + i * (SW + GAP)
     top = PAD // 2
+    # weicher Schatten, damit die drei als eigene Karten lesbar sind und
+    # nicht als ein durchgehendes Feld
+    sh = Image.new('RGBA', (SW + 40, im.height + 40), (0, 0, 0, 0))
+    ImageDraw.Draw(sh).rectangle([20, 22, SW + 19, im.height + 23], fill=(20, 24, 26, 46))
+    sh = sh.filter(ImageFilter.GaussianBlur(9))
+    strip.paste(Image.alpha_composite(
+        Image.new('RGBA', sh.size, PAPER + (255,)), sh).convert('RGB'), (x - 20, top - 20))
     strip.paste(im, (x, top))
     sd.rectangle([x, top, x + SW - 1, top + im.height - 1], outline=RULE)
     tw = sd.textlength(CAPS[i], ar(14))
