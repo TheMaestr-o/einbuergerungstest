@@ -22,11 +22,7 @@
 
 <br><br>
 
-<img src="screenshots/screen-1.png" width="32%" alt="Startseite mit Prüfung, Fehlerspeicher und Themen">
-<img src="screenshots/screen-2.png" width="32%" alt="Bildfrage nach dem Bundeswappen mit vier Wappen zur Auswahl">
-<img src="screenshots/screen-3.png" width="32%" alt="Ergebnisbildschirm mit Stempel bestanden und Fehlerliste">
-
-<sub>Start · Prüfung, Fehler, Themen&nbsp;&nbsp;·&nbsp;&nbsp;Bildfragen mit den Wappen des Katalogs&nbsp;&nbsp;·&nbsp;&nbsp;Ergebnis · jeder Fehler mit richtiger Antwort</sub>
+<img src="screenshots/screens.png" width="100%" alt="Drei Bildschirme: Startseite, Bildfrage mit vier Wappen, Ergebnis mit Stempel und Fehlerliste">
 
 <br>
 

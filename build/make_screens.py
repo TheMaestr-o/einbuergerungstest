@@ -128,4 +128,23 @@ d.text((136, 438), 'freie Berufswahl', font=se(15), fill=INK2)
 d.line([(28, 470), (W - 28, 470)], fill=RULE_S)
 d.text((48, 484), 'Welches Wappen gehört zum Bundesland Berlin?', font=se(17), fill=INK)
 img.save('screenshots/screen-3.png')
-print('screenshots/screen-1..3.png geschrieben')
+# ---------- Streifen: drei Bildschirme als ein Bild ----------
+# Drei einzelne <img> im README ergeben keine Reihe: der Zeilenumbruch
+# zwischen den Tags wird zu einer Lücke, und die Bildunterschriften
+# kleben aneinander. Als ein Bild sitzt das Raster exakt.
+CAPS = ('Start · Prüfung, Fehler, Themen',
+        'Bildfragen mit den Wappen des Katalogs',
+        'Ergebnis · jeder Fehler mit richtiger Antwort')
+SW, GAP, PAD, CAP = 372, 22, 20, 46
+strip = Image.new('RGB', (PAD * 2 + SW * 3 + GAP * 2, PAD + int(SW * H / W) + CAP), PAPER)
+sd = ImageDraw.Draw(strip)
+for i, name in enumerate(('screen-1', 'screen-2', 'screen-3')):
+    im = Image.open(f'screenshots/{name}.png')
+    im = im.resize((SW, int(SW * H / W)), Image.LANCZOS)
+    x = PAD + i * (SW + GAP)
+    strip.paste(im, (x, PAD))
+    sd.rectangle([x, PAD, x + SW - 1, PAD + im.height - 1], outline=RULE)
+    tw = sd.textlength(CAPS[i], ar(14))
+    sd.text((x + (SW - tw) / 2, PAD + im.height + 14), CAPS[i], font=ar(14), fill=INK3)
+strip.save('screenshots/screens.png')
+print('screenshots/screen-1..3.png und screens.png geschrieben', strip.size)
