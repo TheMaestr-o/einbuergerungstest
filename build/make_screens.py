@@ -135,16 +135,20 @@ img.save('screenshots/screen-3.png')
 CAPS = ('Start · Prüfung, Fehler, Themen',
         'Bildfragen mit den Wappen des Katalogs',
         'Ergebnis · jeder Fehler mit richtiger Antwort')
-SW, GAP, PAD, CAP = 372, 22, 20, 46
-strip = Image.new('RGB', (PAD * 2 + SW * 3 + GAP * 2, PAD + int(SW * H / W) + CAP), PAPER)
+# dieselbe Breite und dieselben Ränder wie das Titelbild (1200 px, 56 px
+# Rand), damit die Streifen im README auf einer Linie mit ihm sitzen
+CW, PAD, GAP, CAP = 1200, 56, 25, 52
+SW = (CW - 2 * PAD - 2 * GAP) // 3
+strip = Image.new('RGB', (CW, PAD // 2 + int(SW * H / W) + CAP), PAPER)
 sd = ImageDraw.Draw(strip)
 for i, name in enumerate(('screen-1', 'screen-2', 'screen-3')):
     im = Image.open(f'screenshots/{name}.png')
     im = im.resize((SW, int(SW * H / W)), Image.LANCZOS)
     x = PAD + i * (SW + GAP)
-    strip.paste(im, (x, PAD))
-    sd.rectangle([x, PAD, x + SW - 1, PAD + im.height - 1], outline=RULE)
+    top = PAD // 2
+    strip.paste(im, (x, top))
+    sd.rectangle([x, top, x + SW - 1, top + im.height - 1], outline=RULE)
     tw = sd.textlength(CAPS[i], ar(14))
-    sd.text((x + (SW - tw) / 2, PAD + im.height + 14), CAPS[i], font=ar(14), fill=INK3)
+    sd.text((x + (SW - tw) / 2, top + im.height + 16), CAPS[i], font=ar(14), fill=INK3)
 strip.save('screenshots/screens.png')
 print('screenshots/screen-1..3.png und screens.png geschrieben', strip.size)
